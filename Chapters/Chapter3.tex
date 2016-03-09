@@ -10,20 +10,88 @@
 
 \section{Descripci\'on general}
 
-En el desarrollo inicial de este trabajo final se utilizaron diferentes m\'etodos para determinar el mejor preprocesamiento a utilizar en los sets de im\'agenes propuestos, HRF, ARIA y DRIVE. Los mismos contienen im\'agenes con diferentes enfermedades, tales como, retinopat\'ia diab\'etica, edema macular asociado a la edad e im\'agenes sanas.
-Con el fin de realizar el mejor pre procesamiento para eliminar la mayor cantidad de ruido posible, en las imágenes de los dataset utilizados, se definieron 4 pipeline. Estos consisten en la aplicación de manera consecutiva de algoritmos y filtros encargados de remover el ruido de las imágenes. A continuación se describen las distintas etapas de cada pipeline:
+Para la obtenci\'on de una im\'agen que es utilizada por personal de la salud para la detecci\'on de una enfermedad o la realizaci\'on de un diagnostico prec\'oz respecto a un afecci\'on que sufre el paciente, es necesario realizar un preprocesamiento de las imagenes de fondo de ojo teniendo en cuenta que la misma es de suma importancia para la atenci\'on y posible tratamiento de una persona con problemas visuales severos o no.
+
+Con el fin de generar una im\'agen que permita al Medico proveer ayuda en su diagn\'ostico, es necesario preprocesar la captura de fondo de ojo y de esta forma acercarle una im\'agen mas clara que la obtenida por la herramienta utilizada en la captura de la misma.
+
+
+
+
+%-----------------------------------
+%	SECTION 2
+%-----------------------------------
+\section{Preprocesamiento}
+
+El preprocesamiento digital de im\'agenes permite mejorar distintos aspectos de la misma, de este modo se puede determinar con mayor efectividad el diagn\'ostico correspondiente.
+
+En este sentido, esta etapa de preprocesamiento busca mejorar algunos de los siguientes:
 
 \begin{itemize}
-    \item PIPELINE 1 -> SACAR  FONDO  +  REALCE  +  SACAR  RUIDO
-		\item PIPELINE 2 -> REALCE +  SACAR  RUIDO
-		\item PIPELINE 3 -> REALCE +  SACAR  FONDO
-		\item PIPELINE 4 -> REALCE  + SACAR  FONDO   +  SACAR  RUIDO
+	\item[$*$] Suavizar la im\'agen:  reducir la cantidad de variaciones de intensidad entre píxeles vecinos.					\item[$*$] Eliminar ruido: eliminar aquellos píxeles cuyo nivel de intensidad es muy diferente al de sus vecinos y cuyo origen puede estar tanto en el proceso de adquisición de la imagen como en el de transmisión.
+	\item[$*$] Realzar bordes: destacar los bordes que se localizan en una imagen.
+	\item[$*$] Detectar bordes: detectar los píxeles donde se produce un cambio brusco en la función intensidad.
 \end{itemize}
 
-Las imágenes del Dataset, son imágenes RGB. Inicialmente lo que se hace es tomar solo el canal verde de la imagen, el cual permite observar de manera mas clara los vasos sanguíneos de la imagen. A continuación se describe cada etapa, detallando de que se encarga cada una de ellas:
+En el desarrollo inicial de este trabajo se utilizaron diferentes m\'etodos para determinar el mejor preprocesamiento a utilizar en los sets de im\'agenes propuestos, HRF, ARIA y DRIVE. Los mismos contienen im\'agenes con diferentes enfermedades, tales como, retinopat\'ia diab\'etica, edema macular asociado a la edad e im\'agenes sanas entre otras. 
+
+En primer lugar, se determinaron los algoritmos a utilizar para mejorar el preprocesamiento de las im\'agenes, es decir, disminuir los efectos secundarios que se generan en la captura de im\'agenes de fondo de ojo como los nombrados anteriormente. 
+
+Para la eliminaci\'on o extracci\'on del ruido se tuvieron en cuenta dos algoritmos, filtro de Difusi\'on Anisotr\'opica y filtro de  Coherencia.\\
+
+El filtro de Difusi\'on anisotr\'opica es una técnica destinada a reducir el ruido de una imagen sin necesidad de retirar las piezas importantes del contenido de la imagen, por lo general los bordes, líneas u otros detalles que son importantes para la interpretación de la imagen 1 2 el modelo de difusión anisotrópico asemeja el proceso que crea un espacio de escala, donde una imagen genera una familia parametrizada de forma sucesiva cada vez más borrosas de imágenes, basadas en un proceso de difusión(Ref WIKIPEDIA).\\
+
+El filtro de Coherencia ...This function COHERENCEFILTER will perform Anisotropic Diffusion of a 2D gray/color image or 3D image volume, Which will reduce the noise in an image while preserving the region edges, and will smooth along
+the image edges removing gaps due to noise.\\
+
+Para la eliminaci\'on o extracci\'on del fondo se tuvieron en cuenta tres filtros denominados de paso bajo, el filtro de mediana, el filtro de media y el filtro gaussiano. 
+
+El proceso de filtrado consiste en la aplicación a cada uno de los pixels de la imagen de una matriz de filtrado de tamaño N x N (generalmente de 3x3 aunque puede ser mayor) compuesta por números enteros y que genera un nuevo valor mediante una función del valor original y los de los pixels circundantes. El resultado final se divide entre un escalar, generalmente la suma de los coeficientes de ponderación. Los filtros se pueden expresar mediante una ecuación (6.1)
+
+\begin{displaymath}
+N D'_i,_j=\frac{ND_{i-1},_{j-1} + ND_{i},_{j-1} + ND_{i+1},_{j-1} + ND_{i-1},_{j} + ND_{i},_{j} + ND_{i+1},_{j} + ND_{i-1},_{j+1} + ND_{i-1},_{j+1} + ND_{i-1},_{j+1}}{9}
+\end{displaymath}
+
+donde i y j representan la fila y la columna de cada pixel, N \[D_{i;j}\] su Nivel Digital y ND 0 i;j el Nivel Digital obtenido tras hacer el filtrado.\\
+
+El objetivo de estos consiste en suavizar la im\'agen, son útiles cuando se supone que la imagen tiene gran cantidad de ruido y se quiere eliminar. También pueden utilizarse para resaltar la información correspondiente a una determinada escala (tamaño de la matriz de filtrado); 
 
 \begin{itemize}
-	\item SACAR  FONDO: aplicarle un filtro que suavice la imagen. De esta maneta calculamos el fondo de la imagen, luego le restamos a la imagen original este fondo y de esta manera podemos remover el efecto da bias causado por la modalidad de captura de la imagen. Finalmente se convierte la imagen a doublé para tener mayor precisión en las próximas etapas. 
+	\item[$*$] Filtro de la media, asigna al pixel central la media de todos los pixeles incluidos en la ventana. La matriz de filtrado estaría compuesta por unos y el divisor sería el número total de elementos en la matriz.					\item[$*$] Filtro de la mediana tiene la ventaja de que el valor final del pixel es un valor real presente en la imagen y no un promedio, de este modo se reduce el efecto borroso que tienen las imagenes que han sufrido un filtro de media. Además el filtro de la mediana es menos sensible a valores exremos. El incoveniente es que resulta más complejo de calcular ya que hay que ordenar los diferentes valores que aparecen en los pixeles incluidos en la ventana y determinar cual es el valor central.
+	\item[$*$]Filtros gaussianos. Simulan una distribución gaussiana bivariante. El valor máximo aparece en el pixel central y disminuye hacia los extremos tanto más rápido cuanto menor sea el parámetro de desviación típica s. El resultado será un conjunto de valores entre 0 y 1. Para transformar la matriz a una matriz de números enteros se divide toda la matriz por el menor de los valores obtenidos. La ecuación para calcularla es:
+\end{itemize}
+
+(REF pdf Tecnicas de Filtrado)
+IMAGENES DE MATRICES PARA MEDIA, MEDIANA Y GAUSSIANO
+\begin{figure}[h]
+\minipage{0.32\textwidth}
+	\includegraphics[width=\linewidth]{Figures/media}
+	\caption[Filtro de Media]{ (Filtro de Media).}\label{fig:Filtro de Media}
+\endminipage\hfill
+\minipage{0.32\textwidth}
+	\includegraphics[width=\linewidth]{Figures/media}
+	\caption[ARIA]{ARIA (Degeneración macular).}\label{fig:ARIA}
+\endminipage\hfill
+\end{figure}
+
+
+
+
+Para esto se preprocesaron las im\'agenes por diferentes pipeline, con el fin de encontrar el mejor de ellos para cada set de im\'agenes propuesto.
+Cada uno de estos pipelines, se realiz\'o en base a la variaci\'on de las diferentes etapas de preprocesamiento pensado para cada uno de estos sets de im\'agenes. A continuaci\'on se describen las diferentes etapas pertenecientes a la definici\'on del pipeline.
+
+
+\begin{itemize}
+	    \item Pipeline 1 -> Extracci\'on de fondo  +  Realce  +  Extracci\'on de ruido
+		\item Pipeline 2 -> Realce +  Extracci\'on de ruido
+		\item Pipeline 3 -> Realce +  Extracci\'on de fondo
+		\item Pipeline 4 -> Realce  + Extracci\'on de fondo   +  Extracci\'on de ruido
+\end{itemize}
+
+Las imágenes de los distintos dataset, son imágenes RGB. Inicialmente se obtiene el canal verde de la im\'agen, el cual permite observar de manera mas clara los vasos sangu\'ineos de la misma. Una vez realizdo esto, se procesan las im\'agenes por los pipelines nombrados anteriormente.
+A continuaci\'on se describe cada etapa, detallando de que se encarga cada una de ellas:
+
+\begin{itemize}
+	\item Extracci\'on de fondo: aplicarle un filtro que suavice la imagen. De esta maneta calculamos el fondo de la imagen, luego le restamos a la imagen original este fondo y de esta manera podemos remover el efecto da bias causado por la modalidad de captura de la imagen. Finalmente se convierte la imagen a doublé para tener mayor precisión en las próximas etapas. 
 Para esta etapa se evaluaron tres tipos de filtros y se variaron sus parámetros para encontrar el que mejor elimina el ruido. Estos son: media, mediana y gaussiano.
 	\item SACAR  RUIDO:  Esta etapa consiste en aplicar un filtro que sea capaz de eliminar el ruido provocado por el método de captura o procesamiento de la  imagen, como así también ruido ocasionado por suciedad en lente, partículas en suspensión, etc. 
 Para esta etapa se aplicaron los filtros de difusión anisotropica y filtro anisotrópico de realce de coherencia con el esquema de difusión isotrópica de Perona y Malik.
@@ -33,6 +101,11 @@ Para esta etapa se aplicaron los filtros de difusión anisotropica y filtro anis
 En un principio, para poder determinar cual de los pipeline es el que mejor resultado obtiene, es decir, elimina mas ruido, lo que se hizo fue determinar que filtro y con que parámetros es mejor cada una de las etapas descriptas.
 Lo que se hizo para determinar que filtro y con que parámetros se eliminaba mayor cantidad de ruido, fue aplicar para cada imagen el filtro variando sus parámetros y comparando el resultado con la imagen ground true del dataset. Para realizar la comparación se utiliza el método vl roc de  Matlab. Lo que permite comparar las imágenes, lo que entrega un valor que determina el parecido entre las imágenes. La función retorna un grafico, y un valor de área, que se corresponde con el área debajo de la curva.  Esta área esta acotado entre 0 y 1, siendo 1 el mayor valor alcanzable.
 Durante la iteración por los distintos valores de parámetro, se acumularon los valores obtenidos y se dividieron por la cantidad de imágenes utilizadas, de esta manera se obtiene el área promedio para ese filtro con cada valor de parámetro. De esta forma al terminar el proceso de iteración, podemos determinar que parámetro nos entrego el mejor resultado en promedio. 
+
+En primer lugar y teniendo en cuenta los m\'etodos a utilizar para cada etapa del preprocesamiento, se determinaron los m\'etodos a utilizar para cada una de estas. Si dividimos el preprocesamiento en etapas, se destacan 3, sacar fondo, sacar ruido, realce de bordes. Para la etapa de extracci\'on de fondo se utilizaron 3 m\'etodos: mediana, media y gaussiano. Para la etapa de extracci\'on de ruido se utilizaron 2 m\'etodos: Anisotr\'opico y Coherencia. Por \'ultimo para el realce de de bordes se aplico el m\'etodo Clahe.
+
+Con estas etapas definidas, se realizaron diferentes pipeline a analizar para determinar el mejor pipeline para cada uno de los sets de im\'agenes nombrados anteriormente.
+
 
 \subsection{Pruebas sobre cada Dataset}
 Para realizar las pruebas se utilizaron los dataset Aria  y HRF. Para cada conjunto de imágenes se aplicaron las pruebas descriptas y se obtuvieron los resultados que se mencionan a continuación.
@@ -98,10 +171,12 @@ Para el filtro gaussiano no hay parámetros para variar que varíen significativ
 
 Donde se observa que para las distintas imágenes no existe variación del resultado, y el área obtenida es 0.5469.
 
-\\Pruebas para la etapa SACAR  RUIDO\\
+
+Pruebas para la etapa SACAR  RUIDO\\
 Para esta etapa realizo el mismo proceso   que para el calculo de la ventana, pero en vez de variar el tamaño de ventana,  lo que se vario fue la cantidad de iteraciones que se debe realizar el filtro. 
 
-\\Anisotrópico\\
+
+Anisotrópico\\
 Para el filtro anisotrópico se itero entre 1 y 210 saltando de a 40, y se obtuvo:
 
 \begin{figure}[h]
@@ -124,7 +199,7 @@ Con lo que se determino que los mejores resultados se obtienen entre los valores
 
 Con lo que se obtuvo que el mejor resultado obtenido fue 1 iteración con una área de 0.7557.
 
-\\Coherencia\\
+Coherencia\\
 El proceso para el filtro de coherencia, iterando entre 3 y 450 saltando de a 50, entrego los siguientes resultados:
 
 \begin{figure}[h]
@@ -190,14 +265,6 @@ El proceso de pruebas fue el mismo que se utilizo para el dataset aria.  A conti
 		\end{itemize}
 \end{itemize}
 
-
-%-----------------------------------
-%	SECTION 2
-%-----------------------------------
-\section{Preprocesamiento}
-En primer lugar y teniendo en cuenta los m\'etodos a utilizar para cada etapa del preprocesamiento, se determinaron los m\'etodos a utilizar para cada una de estas. Si dividimos el preprocesamiento en etapas, se destacan 3, sacar fondo, sacar ruido, realce de bordes. Para la etapa de extracci\'on de fondo se utilizaron 3 m\'etodos: mediana, media y gaussiano. Para la etapa de extracci\'on de ruido se utilizaron 2 m\'etodos: Anisotr\'opico y Coherencia. Por \'ultimo para el realce de de bordes se aplico el m\'etodo Clahe.
-
-Con estas etapas definidas, se realizaron diferentes pipeline a analizar para determinar el mejor pipeline para cada uno de los sets de im\'agenes nombrados anteriormente.
 
 %-----------------------------------
 %	SECTION 3
