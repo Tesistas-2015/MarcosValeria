@@ -123,51 +123,58 @@ Tambien se realizaron pruebas, para determinar el valor del parámetro kappa, se
 
 A continuación se muestran resultados logrados en el preprocesado de las imágenes para la obtención del tamaño de ventana óptimo para el dataset Aria.\\
 
-Extracción de fondo\\
-
-Mediana 
- Se itero sobre el tamaño de ventana desde 3 hasta 200, saltando de 10. De esta forma se obtuvo el siguiente resultado:
+Extracción de fondo
+\begin{itemize}
+	\item[$*$]Mediana 
+\end{itemize}
+Se realiz\'o una iteraci\'on con el tamaño de ventana variando desde 3 hasta 200, con pasos de a 10. De esta forma se obtuvo el siguiente resultado:\\
 
 \begin{figure}[h]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/MedianaRangoGrande}
-	\caption[An Electron]{Areas promedio para distintos tamanos de ventana, en un rango 0-200.}
+	\includegraphics[width=1\textwidth]{Figures/MedianaRangoGrande}
+	\caption[Ventana Mediana 0-200]{\'Areas promedio para diferentes tamaños de ventana, en el rango 0-200.}
 	}
 \end{figure}	
 
-De lo cual, se pudo obtener que los valores mas alto se obtenían con ventanas de tamaño 15 a 60, por lo que se itera por cada una de estas y se obtiene que el mejor tamaño de ventana es 41 con una área de 0.8292.
-
-	\begin{figure}[h]
-	{
-	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/MedianaRangoChico}
-	\caption[An Electron]{Areas promedio para distintos tamanos de ventana, en un rango 15-60.}
-	}
-	\end{figure}	
-
-Media 
-La primer iteración se realizo entre 7 a 550 saltando de a 20. Se obtuvo el siguiente resultado:
+De la im\'agen anterior se puede ver que el valor m\'aximo se encuentre en un rango mas chico, por esta  raz\'on se realiza otra iteraci\'on con un tamaño de ventanas variando de 15 a 60. De este modo, mirando el gr\'afico obtenido se puede observar que  el mejor tama\~no de ventana es 41 ya que es el punto m\'aximo de la par\'abola con un valor de \'area bajo la curva de 0.8292.
 
 \begin{figure}[h]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/MediaRangoGrande}
-	\caption[An Electron]{Areas promedio para distintos tamanos de ventana, en un rango 0-550.}
+	\includegraphics[width=1\textwidth]{Figures/MedianaRangoChico}
+	\caption[Ventana Mediana 15-60]{\'Areas promedio para diferentes tamaños de ventana, en el rango 15-60.}
 	}
-\end{figure}
+\end{figure}	
 
-Donde se pudo determinar que los mejores resultados se obtenían con ventanas con tamaño entre 15 y 80, por lo que se itero por cada una y se determino que la optima es de tamaño 41, con un área de 0.7435.
+\begin{itemize}
+	\item[$*$]Media
+\end{itemize}
+
+Para la b\'usqueda de la ventana \'optima en la media, se realiz\'o en primer lugar una iteraci\'on en un rango desde 7 hasta 550 con pasos de a 20 obteni\'endose el siguiente resultado:
 
 \begin{figure}[h]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/MediaRangoChico}
-	\caption[An Electron]{Areas promedio para distintos tamanos de ventana, en un rango 15-80.}
+	\includegraphics[width=1\textwidth]{Figures/MediaRangoGrande}
+	\caption[Ventana Media 7-550]{\'aAreas promedio para diferentes tama\~nos de ventana, en el rango 7-550.}
 	}
 \end{figure}
 
-Gaussiano 
+De la im\'agen anterior se puede ver que el valor m\'aximo se encuentra en un rango mas chico, por esta  raz\'on se realiza otra iteraci\'on con un tama\~no de ventana variando de 15 a 80. De este modo, mirando el gr\'afico obtenido se puede observar que  el mejor tama\~no de ventana es 41 ya que es el punto m\'aximo de la par\'abola con un valor de \'area bajo la curva de 0.7435.
+
+\begin{figure}[h]
+	{
+	\centering
+	\includegraphics[width=1\textwidth]{Figures/MediaRangoChico}
+	\caption[Ventana Media 15-80]{\'Areas promedio para diferentes tama\~nos de ventana, en el rango 15-80.}
+	}
+\end{figure}
+
+\begin{itemize}
+	\item[$*$]Gaussiano
+\end{itemize}
+
 Para el filtro gaussiano no hay parámetros para variar que varíen significativamente el resultado, por lo que solo se evaluó el resultado de aplicar el filtro con el mismo proceso mencionado para la media y mediana, pero sin variar parámetros. 
 
 \begin{figure}[h]
