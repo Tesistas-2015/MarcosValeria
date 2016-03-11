@@ -119,7 +119,7 @@ En el filtro de coherencia, se realizaron iteraciones de hasta 105, pero luego s
 Tambien se realizaron pruebas, para determinar el valor del parámetro kappa, se observo que este parámetro entrega su mejor resultado cuando es igual a dos.
 
 
-\subsubsection{Dataset ARIA}
+\subsection{Dataset ARIA}
 
 A continuación se muestran resultados logrados en el preprocesado de las imágenes para la obtención del tamaño de ventana óptimo para el dataset Aria.\\
 
@@ -127,23 +127,25 @@ Extracción de fondo
 \begin{itemize}
 	\item[$*$]Mediana 
 \end{itemize}
-Se realiz\'o una iteraci\'on con el tamaño de ventana variando desde 3 hasta 200, con pasos de a 10. De esta forma se obtuvo el siguiente resultado:\\
+Se realiz\'o una iteraci\'on con el tamaño de ventana variando desde 3 hasta 200, con pasos de a 10. De esta forma se obtuvo el siguiente resultado(\ref{fig:MedianaRangoGrande})\\
 
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/MedianaRangoGrande}
 	\caption[Ventana Mediana 0-200]{\'Areas promedio para diferentes tamaños de ventana, en el rango 0-200.}
+	\label{fig:MedianaRangoGrande}
 	}
 \end{figure}	
 
-De la im\'agen anterior se puede ver que el valor m\'aximo se encuentre en un rango mas chico, por esta  raz\'on se realiza otra iteraci\'on con un tamaño de ventanas variando de 15 a 60. De este modo, mirando el gr\'afico obtenido se puede observar que  el mejor tama\~no de ventana es 41 ya que es el punto m\'aximo de la par\'abola con un valor de \'area bajo la curva de 0.8292.
+De la im\'agen anterior se puede ver que el valor m\'aximo se encuentre en un rango mas chico, por esta  raz\'on se realiza otra iteraci\'on con un tamaño de ventanas variando de 15 a 60. De este modo, mirando el gr\'afico obtenido (\ref{fig:MedianaRangoChico}) se puede observar que  el mejor tama\~no de ventana es 41 ya que es el punto m\'aximo de la par\'abola con un valor de \'area bajo la curva de 0.8292.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/MedianaRangoChico}
 	\caption[Ventana Mediana 15-60]{\'Areas promedio para diferentes tamaños de ventana, en el rango 15-60.}
+	\label{fig:MedianaRangoChico}
 	}
 \end{figure}	
 
@@ -151,23 +153,25 @@ De la im\'agen anterior se puede ver que el valor m\'aximo se encuentre en un ra
 	\item[$*$]Media
 \end{itemize}
 
-Para la b\'usqueda de la ventana \'optima en la media, se realiz\'o en primer lugar una iteraci\'on en un rango desde 7 hasta 550 con pasos de a 20 obteni\'endose el siguiente resultado:
+Para la b\'usqueda de la ventana \'optima en la media, se realiz\'o en primer lugar una iteraci\'on en un rango desde 7 hasta 550 con pasos de a 20 obteni\'endose el siguiente resultado (\ref{fig:MediaRangoGrande}):
 
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/MediaRangoGrande}
-	\caption[Ventana Media 7-550]{\'aAreas promedio para diferentes tama\~nos de ventana, en el rango 7-550.}
+	\caption[Ventana Media 7-550]{\'Areas promedio para diferentes tama\~nos de ventana, en el rango 7-550.}
+	\label{fig:MediaRangoGrande}
 	}
 \end{figure}
 
-De la im\'agen anterior se puede ver que el valor m\'aximo se encuentra en un rango mas chico, por esta  raz\'on se realiza otra iteraci\'on con un tama\~no de ventana variando de 15 a 80. De este modo, mirando el gr\'afico obtenido se puede observar que  el mejor tama\~no de ventana es 41 ya que es el punto m\'aximo de la par\'abola con un valor de \'area bajo la curva de 0.7435.
+De la im\'agen anterior se puede ver que el valor m\'aximo se encuentra en un rango mas chico, por esta  raz\'on se realiza otra iteraci\'on con un tama\~no de ventana variando de 15 a 80. De este modo, mirando el gr\'afico obtenido  (\ref{fig:MediaRangoChico}) se puede observar que  el mejor tama\~no de ventana es 41 ya que es el punto m\'aximo de la par\'abola con un valor de \'area bajo la curva de 0.7435.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/MediaRangoChico}
 	\caption[Ventana Media 15-80]{\'Areas promedio para diferentes tama\~nos de ventana, en el rango 15-80.}
+	\label{fig:MediaRangoChico}
 	}
 \end{figure}
 
@@ -175,81 +179,89 @@ De la im\'agen anterior se puede ver que el valor m\'aximo se encuentra en un ra
 	\item[$*$]Gaussiano
 \end{itemize}
 
-Para el filtro gaussiano no hay parámetros para variar que varíen significativamente el resultado, por lo que solo se evaluó el resultado de aplicar el filtro con el mismo proceso mencionado para la media y mediana, pero sin variar parámetros. 
+Para el filtro gaussiano no hay parámetros que varíen significativamente el resultado, por lo que solo se evaluó el resultado de aplicar el filtro con el mismo proceso mencionado para la media y mediana. 
 
-\begin{figure}[h]
+A continuaci\'on se puede observar (\ref{fig:gaussiano}) que para las distintas imágenes no existe variación del resultado, y el área obtenida es 0.5469.
+
+
+\begin{figure}[H]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/Gaussiano}
+	\includegraphics[width=1\textwidth]{Figures/Gaussiano}
 	\caption[An Electron]{Areas promedio para cada imagen aplicando el filtro Gaussiano.}
+	\label{fig:gaussiano}
 	}
 \end{figure}
 
-Donde se observa que para las distintas imágenes no existe variación del resultado, y el área obtenida es 0.5469.
+Extracci\'on de ruido\\
+
+En esta etapa se analiz\'o el mejor numero de iteraci\'on para los filtros de difusi\'on anisotr\'opica y filtro de coherencia en base a los resultados obtenidos. Para obtener un resultado \'optimo se realizaron iteraciones varias hasta encontrar el punto de inflexi\'on para este conjunto de im\'agenes.\\
 
 
-Pruebas para la etapa SACAR  RUIDO\\
-Para esta etapa realizo el mismo proceso   que para el calculo de la ventana, pero en vez de variar el tamaño de ventana,  lo que se vario fue la cantidad de iteraciones que se debe realizar el filtro. 
+\begin{itemize}
+	\item[]Filtro de Difusi\'on Anisotr\'opica
+\end{itemize}
 
+Para las pruebas realizadas con este filtro se tuvo en cuenta la variaci\'on del parametro que hace referencia al n\'umero de iteraciones. Las mismas se variaron en un rango de entre 1 y 210 con pasos de 40,obteniendose de este modo, la gr\'afica siguinte (\ref{fig:anisotropica}):
 
-Anisotrópico\\
-Para el filtro anisotrópico se itero entre 1 y 210 saltando de a 40, y se obtuvo:
-
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/AnisotropicoRangoGrande}
+	\includegraphics[width=1\textwidth]{Figures/AnisotropicoRangoGrande}
 	\caption[An Electron]{Areas promedio para distintos valores de iteracion, en un rango 0-210.}
+	\label{fig:anisotropica}
 	}
 \end{figure}
 
 Con lo que se determino que los mejores resultados se obtienen entre los valores 1 y 50. Al repetir el proceso aplicando el filtro con cada valor de iteración entre el rango 1-50 se obtuvo:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/AnisotropicoRangoChico}
+	\includegraphics[width=1\textwidth]{Figures/AnisotropicoRangoChico}
 	\caption[An Electron]{Areas promedio para distintos valores de iteracion, en un rango 1-50.}
 	}
 \end{figure}
 
-Con lo que se obtuvo que el mejor resultado obtenido fue 1 iteración con una área de 0.7557.
+Como podemos observar, el mejor resultado se obtuvo con la iteración 1 y un valor de  área promedio de 0.7557.
 
-Coherencia\\
-El proceso para el filtro de coherencia, iterando entre 3 y 450 saltando de a 50, entrego los siguientes resultados:
+\begin{itemize}
+	\item[]Filtro de Coherencia
+\end{itemize}
 
-\begin{figure}[h]
+El proceso para el filtro de coherencia se reali\'o de la misma forma que el de difusi\'on anisotr\'opica con iteraciones entre 3 y 450 con pasos de 50. Los resultados obtenidos fueron los siguientes (\ref{fig:coherencia}):
+
+\begin{figure}[H]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/CoherenciaRangoGrande}
+	\includegraphics[width=1\textwidth]{Figures/CoherenciaRangoGrande}
 	\caption[An Electron]{Areas promedio para distintos valores de iteracion, en un rango 0-550.}
+	\label{fig:coherencia}
 	}
 \end{figure}
 
-Con esto se determino que los mejores resultados se obtienen con valores de iteración entre 140 y 160, por lo que se itero por cada uno de estos valores y se obtuvo:
+Observando el resultado se conluy\'o que los mejores resultados se obtienen con valores que iteran entre 140 y 160, por lo que se itero por cada uno de estos valores y se obtuvo (\ref{fig:coherenciaRangoChico}):
 
-\begin{figure}[h]
+\begin{figure}[H]
 	{
 	\centering
-	\includegraphics[width=0.50\textwidth]{Figures/CoherenciaRangoChico}
+	\includegraphics[width=1\textwidth]{Figures/CoherenciaRangoChico}
 	\caption[An Electron]{Areas promedio para distintos valores de iteracion, en un rango 140-160.}
+	\label{fig:coherenciaRangoChico}
 	}
 	\end{figure}
 
+Finalmente se determin\'o que para el filtro de coherencia el parámetro de iteraciones consigue su valor \'optimo en 154 iteraciones, obteniendo un área de 0.8756 para este conjunto de im\'agenes.\\
 
-Donde se determino que para el filtro de coherencia el parámetro de iteraciones tenga su valor optimo en 154 iteraciones, obteniendo un área de 0.8756.
-Luego lo que se realizo, es definir que filtros que se utilizarían para cada etapa  y con que parámetros, de acuerdo a los resultados obtenidos. Para la etapa SACAR FONDO se utiliza el filtro de mediana con una ventana de 41x41. Para la etapa de SACAR  RUIDO se utiliza el filtro de Coherencia con 154 iteraciones.  La etapa de realce solo de usa la función adpthisteq que provee Matlab.
+A partir de este  \'analisis realizado en cada una de las etapas, se realizaron las pruebas de los pipeline definidos al principio. 
 
-Pruebas sobre los pipeline
-Lo que se hiso a continuación es pasar todas las imágenes por cada pipeline y ver con cual se obtiene mejores resultados. Estas pruebas entregaron los siguientes resultados:
-Pipeline 1: Áreas  y área promedio.
-Pipeline 2: Áreas  y área promedio.
-Pipeline 3: Áreas  y área promedio.
-Pipeline 4: Áreas  y área promedio.
+
+Como conclusi\'on podemos ver que en la fase de extracci\'on de fondo los mejores resultados se obtuvieron con la mediana, por tal raz\'on se utiliz\'o la misma para el objetivo de esta etapa con una ventana de 41x41. Para la fase de extracci\'on de ruido se observa que los mejores resultados se obtienen con el filtro de coherencia con 154 iteraciones. La etapa de realce simplemente utiliza la funci\'on adapthisteq que provee Matlab.\\
 
 
 
-\subsubsection{Dataset HRF}
+
+\subsection{Dataset HRF}
 
 Se realizaron las pruebas con un conjunto de 15 imágenes del DataSet (5 con glaucoma, 5 con retinopatía y 5 sanas).
 El proceso de pruebas fue el mismo que se utilizo para el dataset aria.  A continuación se describen las pruebas realizadas, en donde todos los pipeline parten del canal verde de la imagen.
@@ -282,7 +294,7 @@ El proceso de pruebas fue el mismo que se utilizo para el dataset aria.  A conti
 \end{itemize}
 
 
-\subsubsection{Dataset DRIVE}
+\subsection{Dataset DRIVE}
 
 
 %-----------------------------------
