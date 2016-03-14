@@ -246,10 +246,10 @@ Observando el resultado se conluy\'o que los mejores resultados se obtienen con 
 	{
 	\centering
 	\includegraphics[width=1\textwidth]{Figures/CoherenciaRangoChico}
-	\caption[An Electron]{Areas promedio para distintos valores de iteracion, en un rango 140-160.}
+	\caption[An Electron]{\'Areas promedio para distintos valores de iteracion, en un rango 140-160.}
 	\label{fig:coherenciaRangoChico}
 	}
-	\end{figure}
+\end{figure}
 
 Finalmente se determin\'o que para el filtro de coherencia el parámetro de iteraciones consigue su valor \'optimo en 154 iteraciones, obteniendo un área de 0.8756 para este conjunto de im\'agenes.\\
 
@@ -272,21 +272,54 @@ Extracción de fondo
 	\item[$*$]Mediana 
 \end{itemize}
 
-En este caso para la obtenci\'on de la mejor ventana a utilizar en este dataset, se realiz\'o la b\'usqueda de la misma haciendo iteraciones que fueron desde 1 hasta 400 con pasos de 20. Finalizado esta prueba se obtuvo el siguiente resultado (\ref{fig:MedianaRangoGrandeHRF}): 
+En este caso para la obtenci\'on de la mejor ventana a utilizar en este dataset, se realiz\'o la b\'usqueda de la misma haciendo iteraciones que fueron desde 3 hasta 403 con pasos de 20. Finalizado esta prueba se obtuvo el siguiente resultado (\ref{fig:MedianaRangoGrandeHRF}): 
 
-IMAGEN MEDIANA RANGO GRANDE
+\begin{figure}[H]
+	{
+	\centering
+	\includegraphics[width=1\textwidth]{Figures/MedianaRangoGrandeHRF}
+	\caption[Mediana HRF]{\'Areas promedio para distintos valores de iteracion, en un rango 3 - 403.}
+	\label{fig:MedianaRangoGrandeHRF}
+	}
+\end{figure}
 
-De la im\'agen anterior se puede ver que el punto m\'aximo de la par\'abola se encuentra en un rango menor, por tal raz\'on se realiza otra iteraci\'on en el rango X-Y con pasos de a 2. La im\'agen a continuaci\'on (\ref{fig:MedianaRangoChicoHRF}) nos muestra el resultado de la mejor ventana para la mediana, siendo esta 103.\\
 
-IMAGEN MEDIANA RANGO CHICO
+De la im\'agen anterior se puede ver que el punto m\'aximo de la par\'abola se encuentra en un rango menor, por tal raz\'on se realiza otra iteraci\'on en el rango 79-141 con pasos de a 2. La im\'agen a continuaci\'on (\ref{fig:MedianaRangoChicoHRF}) nos muestra el resultado de la mejor ventana para la mediana, siendo esta 103.\\
+
+
+\begin{figure}[H]
+	{
+	\centering
+	\includegraphics[width=1\textwidth]{Figures/MedianaRangoChicoHRF}
+	\caption[Mediana HRF]{\'Areas promedio para distintos valores de iteracion, en un rango 79 - 141.}
+	\label{fig:MedianaRangoChicoHRF}
+	}
+\end{figure}
+
+
 
 \begin{itemize}
 	\item[$*$]Media
 \end{itemize}
 
-Para la b\'usqueda de la ventana \'optima en el caso de la media, se realiz\'o una iteraci\'on inicial que se encuentra en los valores de 1 a 400 con pasos de 20, observandose (\ref{fig:MediaRangoGrandeHRF}) que el valor \'optimo puede encontrarse en un rango mas pequeño, se realiz\'o la siguiente iteraci\'on con valores de entre X-Y con pasos de a 2. De esta forma se encontr\'o la mejor ventana, teniendo la misma un valor de 83.
+Para la b\'usqueda de la ventana \'optima en el caso de la media, se realiz\'o una iteraci\'on inicial que se encuentra en los valores de 3 a 213 con pasos de 20, observandose (\ref{fig:MediaRangoGrandeHRF}) que el valor \'optimo puede encontrarse en un rango mas pequeño, se realiz\'o la siguiente iteraci\'on con valores de entre 35-149 con pasos de a 2 (\ref{fig:MediaRangoChicoHRF}). De esta forma se encontr\'o la mejor ventana, teniendo la misma un valor de 83.
 
-IMAGEN MEDIA RANGO GRANDE Y CHICO
+\begin{figure}[H]
+	{
+	\centering
+%	\begin{subfigure}[b]{1\textwidth}
+	\includegraphics[width=1\textwidth]{Figures/MediaRangoGrandeHRF}
+	\caption[Media HRF]{\'Areas promedio para distintos valores de iteracion, en un rango 3 - 213.}
+	\label{fig:MediaRangoGrandeHRF}
+%	\end{subfigure}
+	
+%	\begin{subfigure}[b]{0.3\textwidth}
+	\includegraphics[width=1\textwidth]{Figures/MediaRangoChicoHRF}
+	\caption[Media HRF]{\'Areas promedio para distintos valores de iteracion, en un rango 35 - 149.}
+	\label{fig:MediaRangoChicoHRF}
+%	\end{subfigure}
+	}
+\end{figure}
 
 \begin{itemize}
 	\item[$*$]Gaussiano
