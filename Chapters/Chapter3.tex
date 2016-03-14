@@ -263,12 +263,44 @@ Como conclusi\'on podemos ver que en la fase de extracci\'on de fondo los mejore
 
 \subsection{Dataset HRF}
 
-Se realizaron las pruebas con un conjunto de 15 imágenes del DataSet (5 con glaucoma, 5 con retinopatía y 5 sanas).
-El proceso de pruebas fue el mismo que se utilizo para el dataset aria.  A continuación se describen las pruebas realizadas, en donde todos los pipeline parten del canal verde de la imagen.
+Para este conjunto de im\'agenes se utilizaron 3 tipos de im\'agenes, de las cuales 5 se corresponden con la enfermedad glaucoma, 5 con rentinopa\'ia diabetica y las restantes 5 son im\'agenes sanas. 
+
+El proceso de las pruebas fue el mismo que se utiliz\'o para el dataset aria. Partiendo de una im\'agen con el canal verde, se realizaron las pruebas correspondientes a cada uno de los pipeline mencionados anteriormente, obteniendose los siguientes resultados.\\
+
+Extracción de fondo
+\begin{itemize}
+	\item[$*$]Mediana 
+\end{itemize}
+
+En este caso para la obtenci\'on de la mejor ventana a utilizar en este dataset, se realiz\'o la b\'usqueda de la misma haciendo iteraciones que fueron desde 1 hasta 400 con pasos de 20. Finalizado esta prueba se obtuvo el siguiente resultado (\ref{fig:MedianaRangoGrandeHRF}): 
+
+IMAGEN MEDIANA RANGO GRANDE
+
+De la im\'agen anterior se puede ver que el punto m\'aximo de la par\'abola se encuentra en un rango menor, por tal raz\'on se realiza otra iteraci\'on en el rango X-Y con pasos de a 2. La im\'agen a continuaci\'on (\ref{fig:MedianaRangoChicoHRF}) nos muestra el resultado de la mejor ventana para la mediana, siendo esta 103.\\
+
+IMAGEN MEDIANA RANGO CHICO
+
+\begin{itemize}
+	\item[$*$]Media
+\end{itemize}
+
+Para la b\'usqueda de la ventana \'optima en el caso de la media, se realiz\'o una iteraci\'on inicial que se encuentra en los valores de 1 a 400 con pasos de 20, observandose (\ref{fig:MediaRangoGrandeHRF}) que el valor \'optimo puede encontrarse en un rango mas pequeño, se realiz\'o la siguiente iteraci\'on con valores de entre X-Y con pasos de a 2. De esta forma se encontr\'o la mejor ventana, teniendo la misma un valor de 83.
+
+IMAGEN MEDIA RANGO GRANDE Y CHICO
+
+\begin{itemize}
+	\item[$*$]Gaussiano
+\end{itemize}
+
+En el filtro gaussiano no hay parámetros que varíen significativamente el resultado, por lo que solo se evaluó el resultado de aplicar el filtro con el mismo proceso mencionado para la media y mediana.
+
+IMAGEN GAUSSIANO
+
+
 \begin{itemize}
 	\item Pipeline 1
 		\begin{itemize}
-			\item	Sacar fondo (mediana) + Realce + Sacar Ruido (Anisotrópica): en este caso se utilizó para 	sacar el ruido, la función anisotrópica con un valor de kappa=2 y número de iteraciones igual a 20, se obtuvo así un área promedio de 0.88634779241998385 para la iteración 1. Para valores mayores de kappa, disminuye el área promedio.
+			\item	Extracci\'on de fondo (mediana) + Realce + Sacar Ruido (Anisotrópica): en este caso seutiliz\'o la la extracc se utilizó para 	sacar el ruido, la función anisotrópica con un valor de kappa=2 y número de iteraciones igual a 20, se obtuvo así un área promedio de 0.88634779241998385 para la iteración 1. Para valores mayores de kappa, disminuye el área promedio.
 			\item	Sacar fondo (mediana) + Realce + Sacar Ruido (Coherencia): en este caso se realizaron 50 iteraciones, ya que en pruebas independientes se vio que a mayor número de iteraciones, mejores eran los resultados. El área promedio obtenida fue de 0.94650128394401889 para la iteración 50. Si bien el resultado aumenta hasta la iteración 105, no vale la pena llegar a tal punto ya que el aumento no es significativo con respecto al tiempo que tarda el algoritmo en realizar dichas iteraciones.
 			\item Sacar fondo (media) + Realce + Sacar Ruido (Anisotrópica): en este caso se utilizó un kappa con valor igual a 2 y un número de iteraciones igual a 20. El área promedio obtenida fue de 	 	0.86863159426770764 para 20 iteraciones.
 			\item Sacar fondo (media) + Realce + Sacar Ruido (Coherencia): se realizaron 50 iteraciones y se obtuvo un área promedio de 0.92994809994049088.
