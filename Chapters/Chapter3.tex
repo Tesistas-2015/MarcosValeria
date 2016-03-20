@@ -105,21 +105,6 @@ $\longrightarrow$
   \end{center}
   \caption{A simple table}
 \end{table}
-%\begin{figure*}[t!]
-%    \centering
-%    \begin{subfigure}[t]{0.5\textwidth}
-%        \centering
-%        \includegraphics[height=1.2in]{media}
-%        \caption{Lorem ipsum}
-%    \end{subfigure}%
-%    ~ 
-%    \begin{subfigure}[t]{0.5\textwidth}
-%        \centering
-%        \includegraphics[height=1.2in]{media}
-%        \caption{Lorem ipsum, lorem ipsum,Lorem ipsum, lorem ipsum,Lorem ipsum}
-%    \end{subfigure}
-%    \caption{Caption place holder}
-%\end{figure*}
 
 
 
@@ -298,6 +283,23 @@ A partir de este  \'analisis realizado en cada una de las etapas, se realizaron 
 
 Como conclusi\'on podemos ver que en la fase de extracci\'on de fondo los mejores resultados se obtuvieron con la mediana, por tal raz\'on se utiliz\'o la misma para el objetivo de esta etapa con una ventana de 41x41. Para la fase de extracci\'on de ruido se observa que los mejores resultados se obtienen con el filtro de coherencia con 154 iteraciones. La etapa de realce simplemente utiliza la funci\'on adapthisteq que provee Matlab.\\
 
+Teniendo los par\'ametros  anteriores, los resultados de los diferentes pipeline, fueron los siguientes:\\
+
+
+\begin{table}[!ht]
+  \begin{center}
+    \begin{tabular}{| l c |}
+    \hline
+    Pipeline &   Area \\
+    Pipeline 1 & 0.86\\
+    Pipeline 2 & 0.48\\
+    Pipeline 3 & 0.83\\
+    Pipeline 4 & 0,87\\
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{Dataset ARIA}
+\end{table}
 
 
 
@@ -365,9 +367,29 @@ Para la b\'usqueda de la ventana \'optima en el caso de la media, se realiz\'o u
 	\item[$*$]Gaussiano
 \end{itemize}
 
-En el filtro gaussiano no hay parámetros que varíen significativamente el resultado, por lo que solo se evaluó el resultado de aplicar el filtro con el mismo proceso mencionado para la media y mediana.
+En el filtro gaussiano no hay parámetros que varíen significativamente el resultado, por lo que solo se evaluó el resultado de aplicar el filtro con el mismo proceso mencionado para la media y mediana.\\
 
-IMAGEN GAUSSIANO
+
+Como conclusi\'on podemos ver que en la fase de extracci\'on de fondo los mejores resultados se obtuvieron con la mediana, por tal raz\'on se utiliz\'o la misma para el objetivo de esta etapa con una ventana de 103x103. Para la fase de extracci\'on de ruido se observa que los mejores resultados se obtienen con el filtro de coherencia con 50 iteraciones. La etapa de realce simplemente utiliza la funci\'on adapthisteq que provee Matlab.\\
+
+Teniendo los par\'ametros  anteriores, los resultados de los diferentes pipeline, fueron los siguientes:\\
+
+
+\begin{table}[!ht]
+  \begin{center}
+    \begin{tabular}{| l c |}
+    \hline
+    Pipeline &   Area \\
+    Pipeline 1 & 0.94650128394401889\\
+    Pipeline 2 & 0.30937490250808752\\
+    Pipeline 3 & 0.93866336888430779\\
+    Pipeline 4 & 0,9539922\\
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{Dataset HRF}
+\end{table}
+
 
 
 \begin{itemize}
