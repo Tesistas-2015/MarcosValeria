@@ -73,19 +73,19 @@ Para realizar la captura, se utiliza una c\'amara digital encargada de tomar la 
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
 				\centering
-        \includegraphics[height=3cm\textwidth]{./Figures/imagesARIA.png}
+        \includegraphics[height=3cm]{./Figures/imagesARIA.png}
         \caption{Aria}
         \label{fig:Aria}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
 				\centering
-        \includegraphics[height=3cm\textwidth]{./Figures/imagesDRIVE.png}
+        \includegraphics[height=3cm]{./Figures/imagesDRIVE.png}
         \caption{Drive}
         \label{fig:Drive}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
 				\centering
-        \includegraphics[height=3cm\textwidth]{./Figures/imagesHRF.png}
+        \includegraphics[height=3cm]{./Figures/imagesHRF.png}
         \caption{Hrf}
         \label{fig:Hrf}
     \end{subfigure}        
@@ -173,3 +173,4 @@ biol\'ogico. Cada nodo en una ANN es capaz de llevar a cabo c\'alculos elemental
 \item Guiados por plantillas: Los m\'etodos guiados por plantillas (atlasguided methods) son una poderosa
 herramienta para la segmentación de im\'agenes m\'edicas cuando esta disponible una plantilla o mapa est\'andar. El mapa o plantilla es generada por informaci\'on compilada de la anatom\'ia que requiere segmentaci\'on. Este mapa es utilizado como un marco de referencia para segmentar nuevas im\'agenes. Conceptualmente, los m\'etodos guiados por plantillas son similares a los clasificadores con la excepci\'on de que est\'an implementados en el dominio espacial de la imagen en lugar de en un espacio caracter\'istico.
 \item Otros m\'etodos: Otro m\'etodo de segmentaci\'on es el de ajuste al modelo (model-fitting) que por lo general consiste en tratar de ajustar un forma geom\'etrica simple, como una elipse o par\'abola, a la localizaci\'on de caracter\'isticas de la imagen. Es una t\'ecnica que debe especializarse para la estructura que se segmenta pero se implementa f\'acilmente y puede proveer buenos resultados cuando el modelo es apropiado. Una t\'ecnica m\'as general es ajustar superficies o curvas spline, como en el trabajo de Rueckert et. al. [6]. La dificultad principal con el model-fitting es que las caracter\'isticas de la imagen deben ser extra\'idas antes de realizar el ajuste. El algoritmo de watershead usa conceptos de matem\'atica morfol\'ogica para particionar la imagen en regiones homog\'eneas. Este m\'etodo sufre de sobresegmentaci\'on, la cual ocurre cuando la imagen es segmentada en un n\'umero innecesario de regiones. Por lo tanto, los algoritmos de watershead en im\'agenes médicas por lo general son procesados posteriormente para mezclar regiones separadas que pertenecen a la misma estructura. \cite{coto2003metodos}
+\end{itemize}
