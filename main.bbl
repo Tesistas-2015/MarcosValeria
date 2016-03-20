@@ -16,6 +16,30 @@
   {}
 \endgroup
 
+\entry{cunha2004blood}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cunha-Vaz}{C.-V.}%
+     {Jos\'e~G}{J.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CVJG1}
+  \strng{fullhash}{CVJG1}
+  \field{labelalpha}{CV04}
+  \field{sortinit}{C}
+  \field{number}{3}
+  \field{pages}{715\bibrangedash 721}
+  \field{title}{The blood--retinal barriers system. Basic concepts and clinical
+  evaluation}
+  \field{volume}{78}
+  \field{journaltitle}{Experimental eye research}
+  \field{year}{2004}
+\endentry
+
 \lossort
 \endlossort
 

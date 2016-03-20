@@ -3,10 +3,8 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Anatom\'ia del ojo 0-200}}{3}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Dataset ARIA\relax }}{6}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Dataset HRF\relax }}{6}{figure.caption.10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Dataset DRIVE\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Anatom\'ia del ojo 0-200}}{4}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (A) (B) (C)\relax }}{7}{figure.caption.10}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ventana Mediana 0-200}}{17}{figure.caption.22}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ventana Mediana 15-60}}{18}{figure.caption.23}

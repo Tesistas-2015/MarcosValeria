@@ -39,15 +39,17 @@ singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespac
 
 \usepackage{palatino} % Use the Palatino font by default
 
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % User the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=bibtex,style=alphabetic,natbib=true]{biblatex} % User the bibtex backend with the authoryear citation style (which resembles APA)
+%alphabetic
 
-%\addbibresource{example.bib} % The filename of the bibliography
+\addbibresource{example.bib} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
-
+%\usepackage{cite}
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{subcaption}
 %\usepackage{subfigure}
 
 
