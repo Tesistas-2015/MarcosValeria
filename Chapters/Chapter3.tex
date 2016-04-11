@@ -2,15 +2,15 @@
 
 \chapter{M\'etodos} % Main chapter title
 
-En este capitulo describiremos el algoritmo utilizado para la realizacion del presente trabajo final.
+En este capitulo describiremos el algoritmo utilizado para la realizacion del presente trabajo final.\\
 
-En la secci\'on 3.1 realizaremos una descripci\'on general, la misma contiene informaci\'on acerca de  los m\'etodos de segmentaci\'on propuestos para las im\'agenes de fondo de ojo utilizadas en este proyecto, el concepto de preprocesamiento de im\'agenes, la extracci\'on de indicadores y finalmente el entrenamiento y clasificaci\'on de las im\'agenes basado en indicadores.
+En la secci\'on 3.1 realizaremos una descripci\'on general, la misma contiene informaci\'on acerca de  los m\'etodos de segmentaci\'on propuestos para las im\'agenes de fondo de ojo utilizadas en este proyecto, el concepto de preprocesamiento de im\'agenes, la extracci\'on de indicadores y finalmente el entrenamiento y clasificaci\'on de las im\'agenes basado en indicadores.\\
 
-En la secci\'n 3.2 nos enfocaremos en el preprocesamiento de las im\'agenes. Se detallan las caracteristicas iniciales de las im\'agenes propuestas, las t\'ecnicas utilizadas para la extracci\'on de ruido y fondo, as\'i como tambi\'en la tecnica utilizada para mejorar el contraste. Finalmente se explican los pipelines propuestos y analizados para el preprocesamiento correspondiente de las im\'agenes de fondo de ojo.
+En la secci\'n 3.2 nos enfocaremos en el preprocesamiento de las im\'agenes. Se detallan las caracteristicas iniciales de las im\'agenes propuestas, las t\'ecnicas utilizadas para la extracci\'on de ruido y fondo, as\'i como tambi\'en la tecnica utilizada para mejorar el contraste. Finalmente se explican los pipelines propuestos y analizados para el preprocesamiento correspondiente de las im\'agenes de fondo de ojo.\\
 
-En la secci\'on 3.3...
+En la secci\'on 3.3...\\
 
-En la secci\'on 3.4...
+En la secci\'on 3.4...\\
 \label{Chapter3} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
@@ -19,9 +19,37 @@ En la secci\'on 3.4...
 
 \section{Descripci\'on general}
 
-Para la obtenci\'on de una im\'agen que es utilizada por personal de la salud para la detecci\'on de una enfermedad o la realizaci\'on de un diagnostico prec\'oz respecto a un afecci\'on que sufre el paciente, es necesario realizar un preprocesamiento de las imagenes de fondo de ojo teniendo en cuenta que la misma es de suma importancia para la atenci\'on y posible tratamiento de una persona con problemas visuales severos o no.
+Una categorizaci\'on com\'un de los algoritmos para segmentaci\'on de estructuras vasculares en im\'agenes m\'edicas incluyen t\'ecnicas, tales como enforques basados en regiones y basados en bordes, t\'ecnicas de reconocimiento de patrones, enfoques basados en modelos, enfoques basados en el seguimiento y enfoques basados en redes neuronales. Los algoritmos para la segmentaci\'on de vasos sanguineos se pueden dividir en 6 categorias principales:
+\begin{itemsize}
+	\item T\'ecnica de reconocimiento de patrones.
+	\item Filtrado adaptado.
+	\item Seguimiento de vasos.
+	\item Morfolog\'ia matem\'atica.
+	\item Enfoques multiescala.
+	\item Enfoques basados en modelos.
+	\item Aproximaciones paralelas basadas en hardware.
+\end{itemize}
 
-Con el fin de generar una im\'agen que permita al Medico proveer ayuda en su diagn\'ostico, es necesario preprocesar la captura de fondo de ojo y de esta forma acercarle una im\'agen mas clara que la obtenida por la herramienta utilizada en la captura de la misma.
+La t\'ecnica de reconocimiento de patrones se divide en dos subcategorias, enfoques supervisados y enfoques no supervisado.
+
+El m\'etodo de segmentaci\'on propuesto en el presente trabajo final es un m\'etodo supervisado. En este m\'etodo, la regla para la extracci\'on de los vasos sanguineos es aprendido sobre la base de un conjunto de formaci\'on de im\'agenes de referencia procesados y segmentados manualmente por un oftalm\'ologo. En un procedimiento supervisado, los criterios de clasificaci\'on son determinados sobre la base de caracter\'isticas dadas. Por lo tanto, el requisito previo es la disponibilidad de los datos reales ya clasificados. Como m\'etodos supervisados est\'an dise\~nados en base a los datos pre-clasificados, su rendimiento suele ser mejor que el de los m\'etodos no supervisados y puede producir muy buenos resultados para las im\'agenes retinianas saludables.\\
+
+FIGURA\\
+
+El procesamiento digital de im\'agenes es el conjunto de t\'ecnicas que se aplican a las im\'agenes digitales con el objetivo de mejorar la calidad o facilitar la b\'usqueda de informaci\'on.\\
+
+Durante el preprocesamiento de im\'agenes se aplican un conjunto de filtros, cuyo objetivo fundamental es obtener, a partir de una imagen inicial, otra final cuyo resultado sea mas adecuado para una aplicaci\'o espec\'ifica.
+
+En este trabajo, el preprocesamiento tiene por objetivo:
+\begin{itemize}
+ \item Suavizar la imagen: reducir la cantidad de variaciones de intensidad entre p\'ixeles vecinos.
+ \item Eliminar ruido: eliminar aquellos p\'ixeles cuyo nivel de intensidad es muy diferente al de sus vecinos y cuyo origen puede estar tanto en el proceso de adquisici\'on de la imagen como en el de transmisi\'on.
+ \item Realzar el contraste entre los vasos sanguineos y las demas estructuras anat\'omicas que componen la retina.
+\end{itemize}
+
+
+
+
 
 
 
