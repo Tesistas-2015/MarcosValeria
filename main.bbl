@@ -16,6 +16,34 @@
   {}
 \endgroup
 
+\entry{akita1982computer}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Akita}{A.}%
+     {Koichiro}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kuga}{K.}%
+     {Hideki}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{AKKH1}
+  \strng{fullhash}{AKKH1}
+  \field{labelalpha}{AK82}
+  \field{sortinit}{A}
+  \field{number}{6}
+  \field{pages}{431\bibrangedash 443}
+  \field{title}{A computer method of understanding ocular fundus images}
+  \field{volume}{15}
+  \field{journaltitle}{Pattern recognition}
+  \field{year}{1982}
+\endentry
+
 \entry{coto2003metodos}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -58,6 +86,94 @@
   \field{volume}{78}
   \field{journaltitle}{Experimental eye research}
   \field{year}{2004}
+\endentry
+
+\entry{fraz2012blood}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Fraz}{F.}%
+     {Muhammad~Moazam}{M.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Remagnino}{R.}%
+     {Paolo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hoppe}{H.}%
+     {Andreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Uyyanonvara}{U.}%
+     {Bunyarit}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rudnicka}{R.}%
+     {Alicja~R}{A.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Owen}{O.}%
+     {Christopher~G}{C.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barman}{B.}%
+     {Sarah~A}{S.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{FMM+1}
+  \strng{fullhash}{FMMRPHAUBRAROCGBSA1}
+  \field{labelalpha}{Fra+12}
+  \field{sortinit}{F}
+  \field{number}{1}
+  \field{pages}{407\bibrangedash 433}
+  \field{title}{Blood vessel segmentation methodologies in retinal images--a
+  survey}
+  \field{volume}{108}
+  \field{journaltitle}{Computer methods and programs in biomedicine}
+  \field{year}{2012}
+\endentry
+
+\entry{hoover2000locating}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hoover}{H.}%
+     {Adam}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kouznetsova}{K.}%
+     {Valentina}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldbaum}{G.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{HAKVGM1}
+  \strng{fullhash}{HAKVGM1}
+  \field{labelalpha}{HKG00}
+  \field{sortinit}{H}
+  \field{number}{3}
+  \field{pages}{203\bibrangedash 210}
+  \field{title}{Locating blood vessels in retinal images by piecewise threshold
+  probing of a matched filter response}
+  \field{volume}{19}
+  \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+  \field{year}{2000}
 \endentry
 
 \entry{kanagasingam2014progress}{article}{}

@@ -32,13 +32,13 @@ Una categorizaci\'on com\'un de los algoritmos para segmentaci\'on de estructura
 	
 La t\'ecnica de reconocimiento de patrones se divide en dos subcategorias, enfoques supervisados y enfoques no supervisado.
 
-El m\'etodo de segmentaci\'on propuesto en el presente trabajo final es un m\'etodo supervisado. En este m\'etodo, la regla para la extracci\'on de los vasos sanguineos es aprendido sobre la base de un conjunto de formaci\'on de im\'agenes de referencia procesados y segmentados manualmente por un oftalm\'ologo. En un procedimiento supervisado, los criterios de clasificaci\'on son determinados sobre la base de caracter\'isticas dadas. Por lo tanto, el requisito previo es la disponibilidad de los datos reales ya clasificados. Como m\'etodos supervisados est\'an dise\~nados en base a los datos pre-clasificados, su rendimiento suele ser mejor que el de los m\'etodos no supervisados y puede producir muy buenos resultados para las im\'agenes retinianas saludables.\\
+El m\'etodo de segmentaci\'on propuesto en el presente trabajo final es un m\'etodo supervisado. En este m\'etodo, la regla para la extracci\'on de los vasos sanguineos es aprendido sobre la base de un conjunto de formaci\'on de im\'agenes de referencia procesados y segmentados manualmente por un oftalm\'ologo. En un procedimiento supervisado, los criterios de clasificaci\'on son determinados sobre la base de caracter\'isticas dadas. Por lo tanto, el requisito previo es la disponibilidad de los datos reales ya clasificados. Como m\'etodos supervisados est\'an dise\~nados en base a los datos pre-clasificados, su rendimiento suele ser mejor que el de los m\'etodos no supervisados y puede producir muy buenos resultados para las im\'agenes retinianas saludables. \cite{fraz2012blood} \cite{akita1982computer} \cite{hoover2000locating} \\
 
 FIGURA\\
 
 El procesamiento digital de im\'agenes es el conjunto de t\'ecnicas que se aplican a las im\'agenes digitales con el objetivo de mejorar la calidad o facilitar la b\'usqueda de informaci\'on.\\
 
-Durante el preprocesamiento de im\'agenes se aplican un conjunto de filtros, cuyo objetivo fundamental es obtener, a partir de una imagen inicial, otra final cuyo resultado sea mas adecuado para una aplicaci\'o espec\'ifica.
+Durante el preprocesamiento de im\'agenes se aplican un conjunto de filtros, cuyo objetivo fundamental es obtener, a partir de una imagen inicial, otra final cuyo resultado sea mas adecuado para una aplicaci\'on espec\'ifica.
 
 En este trabajo, el preprocesamiento tiene por objetivo:
 \begin{itemize}
@@ -59,14 +59,15 @@ En este trabajo, el preprocesamiento tiene por objetivo:
 %-----------------------------------
 \section{Preprocesamiento}
 
-El preprocesamiento digital de im\'agenes permite mejorar distintos aspectos de la misma, de este modo se puede determinar con mayor efectividad el diagn\'ostico correspondiente.
+La vascularizaci\'on retiniana se compone de arterias y venas que aparecen como caracteristicas alargadas, con sus afluentes visibles dentro de la imagen de la retina. Hay una amplia gama de vasos que van desde 1 a 20 p\'ixeles de ancho.
+El cruce y ramificaci\'on de los vasos sanguineos pueden complicar el perfil (contorno) del modelo.  Al igual que con el procesamiento de la mayor\'ia de las im\'agenes m\'edicas, la señal de ruido, la deriva en intensidad de la imagen y la falta de contraste de imagen plantean retos importantes para la extracci\'on de vasos sangu\'ineos. \cite{fraz2012blood}
+
 
 En este sentido, esta etapa de preprocesamiento busca mejorar algunos de los siguientes:
 
 \begin{itemize}
 	\item[$*$] Suavizar la im\'agen:  reducir la cantidad de variaciones de intensidad entre píxeles vecinos.					\item[$*$] Eliminar ruido: eliminar aquellos píxeles cuyo nivel de intensidad es muy diferente al de sus vecinos y cuyo origen puede estar tanto en el proceso de adquisición de la imagen como en el de transmisión.
-	\item[$*$] Realzar bordes: destacar los bordes que se localizan en una imagen.
-	\item[$*$] Detectar bordes: detectar los píxeles donde se produce un cambio brusco en la función intensidad.
+	\item[$*$] Realzar el contraste entre los vasos sanguineos y las demas estructuras anat\'omicas que componen la retina.
 \end{itemize}
 
 En el desarrollo inicial de este trabajo se utilizaron diferentes m\'etodos para determinar el mejor preprocesamiento a utilizar en los sets de im\'agenes propuestos, HRF, ARIA y DRIVE. Los mismos contienen im\'agenes con diferentes enfermedades, tales como, retinopat\'ia diab\'etica, edema macular asociado a la edad e im\'agenes sanas entre otras. 
