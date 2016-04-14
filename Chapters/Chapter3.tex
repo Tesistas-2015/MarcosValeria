@@ -59,24 +59,75 @@ En este trabajo, el preprocesamiento tiene por objetivo:
 %-----------------------------------
 \section{Preprocesamiento}
 
-La vascularizaci\'on retiniana se compone de arterias y venas que aparecen como caracteristicas alargadas, con sus afluentes visibles dentro de la imagen de la retina. Hay una amplia gama de vasos que van desde 1 a 20 p\'ixeles de ancho.
-El cruce y ramificaci\'on de los vasos sanguineos pueden complicar el perfil (contorno) del modelo.  Al igual que con el procesamiento de la mayor\'ia de las im\'agenes m\'edicas, la señal de ruido, la deriva en intensidad de la imagen y la falta de contraste de imagen plantean retos importantes para la extracci\'on de vasos sangu\'ineos. \cite{fraz2012blood}
+La fotografía retinal requiere el uso de un complejo sistema óptico, llamado camara de fondo. Este es  un microscopio especializado  de baja potencia con una cámara adjunta, capaz de iluminar y formar imágenes de la retina simultáneamente. Está diseñado para tomar una imagen de la superficie interior del ojo, que incluye la retina, el disco óptico, mácula y polo posterior. La cámara de fondo normalmente opera en tres modos. En la fotografía a color de la retina se examina todo bajo la iluminación de luz blanca. En la fotografía libre de rojo, los vasos y otras estructuras se mejoran en contraste y la luz de la imagen se filtra para eliminar los colores rojos. Las angiografías con fluoresceína se adquieren mediante el método del colorante de rastreo. La fluoresceína de sodio y verde de indocianina se inyecta en la sangre, y luego el angiograma se obtiene fotografiando la fluorescencia emitida después de la iluminación de la retina con luz azul a una longitud de onda de 490 nanómetros.\\
+
+La vascularización retiniana se compone de arterias y venas que aparecen como rasgos alargados, con sus afluentes visibles dentro de la imagen retiniana. Hay una amplia gama de anchos de los vasos que van desde un píxel a veinte píxeles, dependiendo de la anchura de la embarcación y la resolución de la imagen. Otras estructuras que aparecen en las imágenes de fondo de ojo incluyen el límite retina, el disco óptico, y las patologías en forma de manchas algodonosas, lesiones brillantes y oscuras y exudados como se muestra en (\ref{fig:Fondo_de_ojo} (b-d)).\\
+
+El recipiente de perfiles de intensidad de la sección transversal se aproximan a una forma gaussiana o una mezcla de gaussianas en el caso en que un reflejo central de vasos se encuentre presente. La orientación y la escala de grises de un vaso no cambia bruscamente; que son localmente lineales y cambian gradualmente en intensidad a lo largo de su longitud. Los vasos se pueden esperar para ser conectado y, en la retina, forman un árbol binario como la estructura. Sin embargo, la forma, tamaño y nivel de gris local de los vasos sanguíneos pueden variar enormemente y algunas de las características de fondo pueden tener atributos similares a los vasos como se ilustra en (\ref{fig:Fondo_de_ojo} (a y d)).
+El cruce de vasos y de ramificación pueden complicar aún más el modelo de perfil. Al igual que con el procesamiento de la mayoría de las imágenes médicas, la señal de ruido, la deriva en intensidad de la imagen y la falta de contraste de imagen plantean retos importantes para la extracción de vasos sanguíneos.
+Los vasos de la retina también muestran una evidencia de una fuerte reflexión a lo largo de su línea central conocida como un reflejo vaso central, como es evidente en (\ref{fig:Fondo_de_ojo}  (a)), que es más evidente en las arterias que las venas, es más fuerte en las imágenes tomadas en longitudes de onda más largas, y se encuentran típicamente en las imágenes de la retina de los pacientes más jóvenes.\cite{fraz2012blood}\\
 
 
-En este sentido, esta etapa de preprocesamiento busca mejorar algunos de los siguientes:
+\begin{figure}[H]
+	{
+	\centering
+	\includegraphics[width=1\textwidth]{Figures/image_ojo}
+	\caption[Imagenes de Fondo de ojo]{Morfolog\'ia de im\'agenes de la retina: (a)Reflejo en el vaso central y fondo desigual, (b) Manchas algodonosas, (c)Exudados, (d) Estructura anat\'omica de la retina.}
+	\label{fig:Fondo_de_ojo}
+	}
+\end{figure}	
 
-\begin{itemize}
-	\item[$*$] Suavizar la im\'agen:  reducir la cantidad de variaciones de intensidad entre píxeles vecinos.					\item[$*$] Eliminar ruido: eliminar aquellos píxeles cuyo nivel de intensidad es muy diferente al de sus vecinos y cuyo origen puede estar tanto en el proceso de adquisición de la imagen como en el de transmisión.
-	\item[$*$] Realzar el contraste entre los vasos sanguineos y las demas estructuras anat\'omicas que componen la retina.
-\end{itemize}
 
-En el desarrollo inicial de este trabajo se utilizaron diferentes m\'etodos para determinar el mejor preprocesamiento a utilizar en los sets de im\'agenes propuestos, HRF, ARIA y DRIVE. Los mismos contienen im\'agenes con diferentes enfermedades, tales como, retinopat\'ia diab\'etica, edema macular asociado a la edad e im\'agenes sanas entre otras. 
+Los m\'etodos de segmentaci\'on de los vasos de la retina son evaluados en tres bases de datos, DRIVE, HRF y ARIA.
+
+DRIVE es una base de datos a disposici\'on del p\'ublico, que consta de un total de 40 im\'agenes a color con lesiones. Las fotograf\'ias se obtuvieron a partir de un programa de cribado de la retinopat\'ia diab\'etica en los Pa\'ises Bajos.
+La poblaci\'on de selecci\'on consisti\'o en 453 sujetos de entre 31 y 86 a\~nos de edad. Cada imagen se ha comprimido JPEG , que es pr\'actica com\'un en los programas de cribado.\\
+De las 40 im\'agenes en la base de datos, 7 contienen la patolog\'ia, es decir, los exudados, hemorragias y cambios del epitelio pigmentario. Ver (\ref{fig:Drive_images_retinal}) para un ejemplo de una imagen patol\'ogica y  una normal. Las im\'agenes fueron adquiridas mediante una camara no midri\'atica.\\
+
+\begin{figure}[H]
+	{
+	\centering
+	\includegraphics[width=1\textwidth]{Figures/Drive_images_retinal}
+	\caption[Drive]{Im\'agen de la retina - DRIVE: (a) Retina saludable, (b) Retina con muestras patol\'ogicas.}
+	\label{fig:Drive_images_retinal}
+	}
+\end{figure}	
+
+
 
 En primer lugar, se determinaron los algoritmos a utilizar para mejorar el preprocesamiento de las im\'agenes, es decir, disminuir los efectos secundarios que se generan en la captura de im\'agenes de fondo de ojo como los nombrados anteriormente. 
 
 Para la eliminaci\'on o extracci\'on del ruido se tuvieron en cuenta dos algoritmos: filtro de Difusi\'on Anisotr\'opica y filtro de  Coherencia.\\
 
-El filtro de Difusi\'on anisotr\'opica es una técnica destinada a reducir el ruido de una imagen sin necesidad de retirar las piezas importantes del contenido de la imagen, por lo general los bordes, líneas u otros detalles que son importantes para la interpretación de la imagen el modelo de difusión anisotrópico asemeja el proceso que crea un espacio de escala, donde una imagen genera una familia parametrizada de forma sucesiva cada vez más borrosas de imágenes, basadas en un proceso de difusión.\\
+En la actualidad existe una  amplia gama de metodologías para la detección automática de defectos  con  bajo contraste [1s-5], todas ellas dependen de la buena adquisición de la imagen, las condiciones de iluminación, el tipo de material que se desea inspeccionar, entre otros. A esto se le suma las características de los defectos que se quieran detectar, un ejemplo de estas características es el contraste que generan los defectos con respecto al fondo de la muestra, defectos que generan un mayor contraste son más fáciles de detectar que aquellos cuyo 
+contraste es muy bajo.\\
+Los defectos de bajo contraste se pueden clasificar dentro de dos clases con características diferentes para las etapas posteriores del proceso como la segmentación y clasificación. En la primera clase se encuentran los defectos oscuros de bajo contraste, estos se caracterizan por tener un nivel de gris más bajo. La segunda clase está conformada por defectos claros con bajo contraste, los cuales tienen un nivel de gris más alto 
+en comparación al fondo en el que se encuentran embebidos. Se debe tener en cuenta que los defectos tienen niveles de gris diferentes (mayor o menor) al del resto del objeto de estudio, y  que el bajo contraste del defecto con respecto al  fondo del objeto  hace que la tarea de detección sea compleja tanto para las personas como para los sistemas de inspección industrial basados en visión por computador.\\
+
+Esta secci\'on se centra en la evaluaci\'on del filtro de difusión anisotrópico como estrategia de realzado previa a la segmentación de defectos oscuros de bajo contraste en objetos pequeños de alta reflectividad con iluminación no homogénea.
+
+Definici\'on del modelo de difusi\'on anisotr\'opico\\
+
+La difusión anisotrópica propuesta por Perona y Malik \cite{perona1990scale} está dada de la siguiente manera: 
+
+\begin{displaymath}
+I_t=div\lbrack c_t(x,y)\nabla I_t(x,y)\rbrack  \hspace{2cm}(1)
+\end{displaymath}
+
+Donde div  es el operador de divergencia, \begin{displaymath}  \Delta \end{displaymath} es el operador Laplaciano y \begin{displaymath}
+\nabla \end{displaymath}   es el operador gradiente.  \begin{displaymath} c_t(x,y)\end{displaymath} es el coeficiente 
+de difusión definido en función del gradiente de tal forma que se adapte para que los bordes entre regiones sean preservados 
+y los detalles intraregiones sean suavizados, \begin{displaymath} c_t(x,y)\end{displaymath} se define como se muestra a continuación:
+
+\begin{displaymath}
+c_t(x,y)=g(\nabla I_t(x,y))=1/\lbrack1+(\left|\nabla I_t/k\right|)^2\rbrack \hspace{2cm}(2)
+\end{displaymath}
+La difusión anisotrópica  se puede expresar de forma discreta de la siguiente manera:
+
+\begin{displaymath}
+I_{t+1}(x,y)=I_t(x,y) + \frac14{{{\sum_{i=1}^{4} \lbrack c_t^i(x,y).\nabla I_t^i(x,y)\rbrack}}} \hspace{2cm}(3)
+\end{displaymath}
+El filtro de Difusi\'on anisotr\'opica es una técnica destinada a reducir el ruido de una imagen sin necesidad de retirar las piezas importantes del contenido de la imagen, por lo general los bordes, líneas u otros detalles que son importantes para la interpretación de la imagen, el modelo de difusión anisotrópico asemeja el proceso que crea un espacio de escala, donde una imagen genera una familia parametrizada de forma sucesiva cada vez más borrosas de imágenes, basadas en un proceso de difusión.\\
 
 El filtro de Coherencia ...This function COHERENCEFILTER will perform Anisotropic Diffusion of a 2D gray/color image or 3D image volume, Which will reduce the noise in an image while preserving the region edges, and will smooth along
 the image edges removing gaps due to noise.\\

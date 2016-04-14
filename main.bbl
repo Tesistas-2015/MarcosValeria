@@ -311,6 +311,35 @@
   \field{year}{2006}
 \endentry
 
+\entry{perona1990scale}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Perona}{P.}%
+     {Pietro}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Malik}{M.}%
+     {Jitendra}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PPMJ1}
+  \strng{fullhash}{PPMJ1}
+  \field{labelalpha}{PM90}
+  \field{sortinit}{P}
+  \field{number}{7}
+  \field{pages}{629\bibrangedash 639}
+  \field{title}{Scale-space and edge detection using anisotropic diffusion}
+  \field{volume}{12}
+  \field{journaltitle}{Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on}
+  \field{year}{1990}
+\endentry
+
 \entry{staal2004ridge}{article}{}
   \name{author}{5}{}{%
     {{}%
