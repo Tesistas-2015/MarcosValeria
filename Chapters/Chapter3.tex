@@ -122,80 +122,68 @@ y los detalles intraregiones sean suavizados, \begin{displaymath} c_t(x,y)\end{d
 \begin{displaymath}
 c_t(x,y)=g(\nabla I_t(x,y))=1/\lbrack1+(\left|\nabla I_t/k\right|)^2\rbrack \hspace{2cm}(2)
 \end{displaymath}
+
 La difusión anisotrópica  se puede expresar de forma discreta de la siguiente manera:
 
 \begin{displaymath}
 I_{t+1}(x,y)=I_t(x,y) + \frac14{{{\sum_{i=1}^{4} \lbrack c_t^i(x,y).\nabla I_t^i(x,y)\rbrack}}} \hspace{2cm}(3)
 \end{displaymath}
-El filtro de Difusi\'on anisotr\'opica es una técnica destinada a reducir el ruido de una imagen sin necesidad de retirar las piezas importantes del contenido de la imagen, por lo general los bordes, líneas u otros detalles que son importantes para la interpretación de la imagen, el modelo de difusión anisotrópico asemeja el proceso que crea un espacio de escala, donde una imagen genera una familia parametrizada de forma sucesiva cada vez más borrosas de imágenes, basadas en un proceso de difusión.\\
+
+En el modelo discreto \begin{displaymath} \nabla I_t^i(x,y), i= 1,2,3,...,4 \end{displaymath} son los gradientes de los vecindarios en diferentes direcciones y \begin{displaymath} c_t^i(x,y) \end{displaymath} es el coeficiente de difusi\'on mencionado en (2), en esta ecuaci\'on k es una constante que se debe fijar de acuerdo a la aplicaci\'on del filtro seg\'un el desempe\~no que se busque.\\
+
+El filtro de Difusi\'on anisotr\'opica es una técnica destinada a reducir el ruido de una imagen sin necesidad de retirar las piezas importantes del contenido de la imagen, por lo general los bordes, líneas u otros detalles que son importantes para la interpretación de la imagen, el modelo de difusión anisotrópico asemeja el proceso que crea un espacio de escala, donde una imagen genera una familia parametrizada de forma sucesiva cada vez más borrosas de imágenes, basadas en un proceso de difusión.\\ 
+
+EXPLICAR UN POCO MAS DIFUSION ANISOTROPICA
 
 El filtro de Coherencia ...This function COHERENCEFILTER will perform Anisotropic Diffusion of a 2D gray/color image or 3D image volume, Which will reduce the noise in an image while preserving the region edges, and will smooth along
-the image edges removing gaps due to noise.\\
+the image edges removing gaps due to noise.\\ HACERLO COMPLETO 
+
+
 
 Para la eliminaci\'on o extracci\'on del fondo se tuvieron en cuenta tres filtros denominados de paso bajo, el filtro de mediana, el filtro de media y el filtro gaussiano. 
 
 El proceso de filtrado consiste en la aplicación a cada uno de los pixels de la imagen de una matriz de filtrado de tamaño N x N (generalmente de 3x3 aunque puede ser mayor) compuesta por números enteros y que genera un nuevo valor mediante una función del valor original y los de los pixels circundantes. El resultado final se divide entre un escalar, generalmente la suma de los coeficientes de ponderación. Los filtros se pueden expresar mediante una ecuación (6.1)
 
 \begin{displaymath}
-N D'_i,_j=\frac{ND_{i-1},_{j-1} + ND_{i},_{j-1} + ND_{i+1},_{j-1} + ND_{i-1},_{j} + ND_{i},_{j} + ND_{i+1},_{j} + ND_{i-1},_{j+1} + ND_{i-1},_{j+1} + ND_{i-1},_{j+1}}{9}
+ND'_{i,j}=\frac{ND_{i-1,j-1}+ND_{i,\;j-1}+ND_{i+1,j-1}+ND_{i-1,j}+ND_{i,j}+ND_{i+1,j}+ND_{i-1,j+1}+ND_{i-1,j+1}ND_{i-1,j+1}}9 \hspace{2cm}(6.1)
 \end{displaymath}
 
-donde i y j representan la fila y la columna de cada pixel, N \[D_{i;j}\] su Nivel Digital y ND 0 i;j el Nivel Digital obtenido tras hacer el filtrado.\\
+donde i y j representan la fila y la columna de cada pixel,  \[ND_{i;j}\] su Nivel Digital y \[ND'_{i,j}\] el Nivel Digital obtenido tras hacer el filtrado.\\
 
 El objetivo de estos consiste en suavizar la im\'agen, son útiles cuando se supone que la imagen tiene gran cantidad de ruido y se quiere eliminar. También pueden utilizarse para resaltar la información correspondiente a una determinada escala (tamaño de la matriz de filtrado); 
 
 
 \begin{itemize}
-	\item[$*$] Filtro de la media, asigna al pixel central la media de todos los pixeles incluidos en la ventana. La matriz de filtrado estaría compuesta por unos y el divisor sería el número total de elementos en la matriz.					\item[$*$] Filtro de la mediana tiene la ventaja de que el valor final del pixel es un valor real presente en la imagen y no un promedio, de este modo se reduce el efecto borroso que tienen las imagenes que han sufrido un filtro de media. Además el filtro de la mediana es menos sensible a valores exremos. El incoveniente es que resulta más complejo de calcular ya que hay que ordenar los diferentes valores que aparecen en los pixeles incluidos en la ventana y determinar cual es el valor central.
+	\item[$*$] Filtro de la media, asigna al pixel central la media de todos los pixeles incluidos en la ventana. La matriz de filtrado estaría compuesta por unos y el divisor sería el número total de elementos en la matriz.
+	
+\begin{displaymath}
+\begin{array}{l}\begin{array}{cccc}20&23&30&31\\22&21&29&30\\23&24&32&33\\29&31&34&37\end{array}\rightarrow\begin{array}{ccc}1&1&1\\1&1&1\\1&1&1\end{array}\rightarrow\begin{array}{cccc}N&N&N&N\\N&24.8&28.1&N\\N&27.2&30.1&N\\N&N&N&N\end{array}\\\\\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\text{Filtro de Media}\end{array}
+\end{displaymath}
+				
+	\item[$*$] Filtro de la mediana tiene la ventaja de que el valor final del pixel es un valor real presente en la imagen y no un promedio, de este modo se reduce el efecto borroso que tienen las imagenes que han sufrido un filtro de media. Además el filtro de la mediana es menos sensible a valores exremos. El incoveniente es que resulta más complejo de calcular ya que hay que ordenar los diferentes valores que aparecen en los pixeles incluidos en la ventana y determinar cual es el valor central.
+\begin{displaymath}
+\begin{array}{l}\begin{array}{cccc}20&23&30&31\\22&21&29&30\\23&24&32&33\\29&31&34&37\end{array}\rightarrow\begin{array}{cccc}N&N&N&N\\N&23&30&N\\N&29&31&N\\N&N&N&N\end{array}\\\\\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\text{Filtro de Mediana}\end{array}
+\end{displaymath}
+
 	\item[$*$]Filtros gaussianos. Simulan una distribución gaussiana bivariante. El valor máximo aparece en el pixel central y disminuye hacia los extremos tanto más rápido cuanto menor sea el parámetro de desviación típica s. El resultado será un conjunto de valores entre 0 y 1. Para transformar la matriz a una matriz de números enteros se divide toda la matriz por el menor de los valores obtenidos. La ecuación para calcularla es:
+	
+	\begin{displaymath}
+	g(x,y)=e^{-\frac{x^2+y^2}{2\ast s^2}} \hspace{2cm}(6.2)
+	\end{displaymath}
+	
+	\begin{displaymath}
+		G(x,y)=\frac{g(x,y)}{min_{x,y}(g(x,y))} \hspace{2cm}(6.3)
+	\end{displaymath}
 \end{itemize}
 
-(REF pdf Tecnicas de Filtrado -tema06.pdf)\\
 
-IMAGENES DE MATRICES PARA MEDIA, MEDIANA Y GAUSSIANO\\
+Para mejorar el contraste de las im\'agenes se utilizo la t\'ecnica Contrast Limited AHE (CLAHE) -  differs from ordinary adaptive histogram equalization in its contrast limiting. This feature can also be applied to global histogram equalization, giving rise to contrast limited histogram equalization (CLHE), which is rarely used in practice. In the case of CLAHE, the contrast limiting procedure has to be applied for each neighbourhood from which a transformation function is derived. CLAHE was developed[3] to prevent the overamplification of noise that adaptive histogram equalization can give rise to.
 
-\begin{table}[!ht]
-  \begin{center}
-    \begin{tabular}{| l c r c |}
-    \hline
-    20 & 23 & 30 & 31 \\
-    22 & 21 & 29 & 30\\
-    23 & 24 & 32 & 33\\
-    29 & 31 & 34 & 37\\
-    \hline
-    \end{tabular}
-  \end{center}
-  \caption{A simple table}
-\end{table}
-$\longrightarrow$
-\begin{table}[!ht]
-  \begin{center}
-    \begin{tabular}{| l c r |}
-    \hline
-    1 & 1 & 1 \\
-    1 & 1 & 1 \\
-    1 & 1 & 1 \\
-    \hline
-    \end{tabular}
-  \end{center}
-  \caption{A simple table}
-\end{table}
-$\longrightarrow$
-\begin{table}[!ht]
-  \begin{center}
-    \begin{tabular}{| l c r c |}
-    \hline
-    N & N & N & N \\
-    N & 24.8 & 28.1 & N\\
-    N & 27.2 & 30.1 & N\\
-    N & N & N & N\\
-    \hline
-    \end{tabular}
-  \end{center}
-  \caption{A simple table}
-\end{table}
+This is achieved by limiting the contrast enhancement of AHE. The contrast amplification in the vicinity of a given pixel value is given by the slope of the transformation function. This is proportional to the slope of the neighbourhood cumulative distribution function (CDF) and therefore to the value of the histogram at that pixel value. CLAHE limits the amplification by clipping the histogram at a predefined value before computing the CDF. This limits the slope of the CDF and therefore of the transformation function. The value at which the histogram is clipped, the so-called clip limit, depends on the normalization of the histogram and thereby on the size of the neighbourhood region. Common values limit the resulting amplification to between 3 and 4.
 
+It is advantageous not to discard the part of the histogram that exceeds the clip limit but to redistribute it equally among all histogram bins.
 
+The redistribution will push some bins over the clip limit again (region shaded green in the figure), resulting in an effective clip limit that is larger than the prescribed limit and the exact value of which depends on the image. If this is undesirable, the redistribution procedure can be repeated recursively until the excess is negligible.
 
 Con los métodos de filtrado definidos y analizados teniendo en cuenta sus ventajas y desventajas, se realizaron cuatro pipelines para determinar cual de estos es el mejor para utilizar en los sets de im\'agenes propuestos.
 
