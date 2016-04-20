@@ -45,10 +45,33 @@ DRIVE es una base de datos a disposici\'on del p\'ublico, que consta de un total
 \end{figure}	
 
 
-HRF es una base de datos que ha sido establecida por un grupo de investigaci\'on para apoyar los estudios comparativos sobre los algoritmos de segmentaci\'on autom\'atica de im\'agenes en la retina del fondo del ojo. Es una base de datos a disposici\'on del p\'ublico, que contiene en este momento 15 im\'agenes de pacientes sanos, 15 im\'agenes de pacientes con retinopat\'ia diab\'etica y 15 im\'agenes de pacientes con glaucoma. Las im\'agenes segmentadas de los vasos est\'an disponibles para cada imagen. Tambi\'en se proporcionan las m\'ascaras, se determina el campo de visi\'on (FOV) para los conjuntos de datos particulares. Los datos est\'adar de oro son generados por un grupo de expertos que trabajan en el campo de an\'alisis de im\'agenes de la retina y los m\'edicos de las cl\'inicas oftalmol\'ogicas.\\
+HRF es una base de datos que ha sido establecida por un grupo de investigaci\'on sobre el reconocimiento de patrones, en un proyecto llevado a cabo por el laboratorio de la Universidad de Erlangen-Nuremberg Alemania  en cooperación con  la Clínica de Oftalmología Tomas de Kubena, Zlin, República Checa, para apoyar los estudios comparativos sobre los algoritmos de segmentaci\'on autom\'atica de im\'agenes en la retina del fondo del ojo. Es una base de datos a disposici\'on del p\'ublico, que contiene en este momento 15 im\'agenes de pacientes sanos, 15 im\'agenes de pacientes con retinopat\'ia diab\'etica y 15 im\'agenes de pacientes con glaucoma. Las im\'agenes segmentadas de los vasos est\'an disponibles para cada imagen. Tambi\'en se proporcionan las m\'ascaras, se determina el campo de visi\'on (FOV) para los conjuntos de datos particulares. Los datos est\'adar de oro son generados por un grupo de expertos que trabajan en el campo de an\'alisis de im\'agenes de la retina y los m\'edicos de las cl\'inicas oftalmol\'ogicas. Las im\'agenes se capturaron usando una c\'amara  Canon EOS-20D con un campo de visi\'on de $60^{\circ}$ FOV. 
+El tama\~no de las im\'agenes es de 3504 {x} 2336 p\'ixeles. Todas las im\'agenes son de 24 bits por p\'ixel y son almacenada en formato JPEG.Se proporciona tambien para cada imagen, una máscara binaria para determinar el campo de visi\'on. \cite{budai2011public} \\
 
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=0.3\textwidth]{01_dr.jpg} \label{fig:retinopatia}}
+		\subfloat{\includegraphics[width=0.3\textwidth]{01_g.jpg} \label{fig:glaucoma}}
+		\subfloat{\includegraphics[width=0.3\textwidth]{01_h.jpg} \label{fig:sana}}
+    \caption{Im\'agenes del dataset HRF. De izquierda a derecha: Retinopat\'ia  diabetica; Glaucoma; Imagen Sana}
+		\label{fig:transferOverfeat}
+\end{figure}
 
 ARIA es una base de datos creada en 2006, en una colaboración de investigación entre  St. Paul's Eye Unit, Royal Liverpool University Hospital Trust, Liverpool, Reino Unido y el Departamento de Oftalmología, Ciencias Clínicas, Universidad de Liverpool, Liverpool, Reino Unido \cite{}. La base de datos consta de tres grupos; uno tiene 92 im\'agenes con degeneraci\'on macular relacionada con la edad, el segundo grupo tiene 59 im\'agenes con diabetes y un grupo de control se compone de 61 im\'agenes. El rastro de los vasos sangu\'ineos, la ubicaci\'on del disco \'optico y la f\'ovea est\'a marcada por dos expertos en an\'alisis de imagen como patr\'on de referencia. Las im\'agenes se capturan a una resoluci\'on de 768 {x} 576 p\'ixeles de colores RGB con 8 bits por plano de color con una c\'amara de fondo Zeiss FF450 con un campo de visi\'on de $50^{\circ}$ y se almacenan como archivos TIFF sin comprimir.\\
+
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=0.3\textwidth]{a_01.png} \label{fig:a_}}
+		\subfloat{\includegraphics[width=0.3\textwidth]{c_1_7.png} \label{fig:c_}}
+		\subfloat{\includegraphics[width=0.3\textwidth]{d_1_19.png} \label{fig:d_}}
+    \caption{Im\'agenes del dataset ARIA. De izquierda a derecha: a; c; d}
+		\label{fig:transferOverfeat}
+\end{figure}
+
 %-----------------------------------
 %	SECTION 2
 %-----------------------------------
