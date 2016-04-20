@@ -1,4 +1,5 @@
-
+*.bib
+*.lof
 # Compiled source #
 ###################
 *.com
