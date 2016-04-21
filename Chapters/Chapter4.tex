@@ -89,6 +89,22 @@ ARIA es una base de datos creada en 2006, en una colaboración de investigación
 %----------------------------------------------------------------------------------------
 
 \subsection{Preprocesamiento}
+\begin{itemize}
+\item Extracci\'on de fondo: El objetivo de esta etapa consiste en suavizar la im\'agen, para esto calculamos el fondo de la misma, luego  restamos a la im\'agen original este fondo y de esta manera podemos remover el efecto de bias causado por la modalidad de captura de la im\'agen. Finalmente se convierte la im\'agen a double para tener mayor precisi\'on en las pr\'oximas etapas.
+	\begin{itemize}
+		\item Filtro de Mediana: para el calculo del filtro de mediana, se busc\'o cual era la mejor ventana a utilizar para cada uno de los dataset nombrados anteriormente, basandonos en el valor obtenido por la funci\'on vlroc de Matlab que determina el \'area bajo la curva promedio para cada set de im\'agenes. Los resultados arrojaron diferentes valores para cada conjunto de im\'agenes, por un lado se obtuvo un valor de ventana igual a 113 para el dataset HRF, lo cual es razonable para el tama\'no de dichas im\'agenes. Con este valor de ventana se obtuvo un \'area promedio de 0.xxxx.... Por otro lado, con el conjunto de DRIVE se determin\'o que el mejor valor de ventana es 29, dando un valor de \'area bajo la curva de 0.xxxx..,  lo cual tambi\'en es razonable ya que este tipo de im\'agenes son de menor tama\~no que las anteriores. Finalmente las im\'agenes ARIA resultaron un valor de ventana igual a 41 con un valor de \'area bajo la curva de 0.xxxx. IMAGENES DE LA CURVA DE ROC.
+		\item Filtro Gaussiano: para el calculo de \'area bajo la curva de este filtro, se utilizaron los par\'ametros por defecto del filtro, observ\'andose que los valores obtenidos fueron muy por debajo de los obtenidos en los otros filtros. Por tal raz\'on se determin\'o que no es un filtro aplicable a este tipo de im\'agenes ya que no genera resultados buenos. IMAGENES DE LA CURVA DE ROC
+		\item Filtro Promedio: para el calculo del filtro promedio, se busc\'o cual era la mejor ventana a utilizar para cada uno de los dataset nombrados anteriormente, basandonos en el valor obtenido por la funci\'on vlroc de Matlab que determina el \'area bajo la curva promedio para cada set de im\'agenes. Los resultados arrojaron diferentes valores para cada conjunto de im\'agenes, por un lado se obtuvo un valor de ventana igual a 85 para el dataset HRF, lo cual es razonable para el tama\'no de dichas im\'agenes. Con este valor de ventana se obtuvo un \'area promedio de 0.xxxx.... Por otro lado, con el conjunto de DRIVE se determin\'o que el mejor valor de ventana es 25, dando un valor de \'area bajo la curva de 0.xxxx..,  lo cual tambi\'en es razonable ya que este tipo de im\'agenes es de menor tama\~no que las anteriores. Finalmente las im\'agenes ARIA resultaron un valor de ventana igual a XX con un valor de \'area bajo la curva de 0.xxxx. IMAGENES DE LA CURVA DE ROC.
+	\end{itemize}
+\item Extracci\'on de ruido:
+	\begin{itemize}
+		\item Filtro anisotr\'opico:
+		\item Filtro de coherencia: 
+	\end{itemize}
+\end{itemize}
+
+
+Los resultados obtenidos en los diferentes pipeline se muestran a continuacion (Figura xx). 
 
 %----------------------------------------------------------------------------------------
 %	SUBSECTION 5
