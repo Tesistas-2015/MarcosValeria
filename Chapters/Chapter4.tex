@@ -92,13 +92,56 @@ ARIA es una base de datos creada en 2006, en una colaboración de investigación
 \begin{itemize}
 \item Extracci\'on de fondo: El objetivo de esta etapa consiste en suavizar la im\'agen, para esto calculamos el fondo de la misma, luego  restamos a la im\'agen original este fondo y de esta manera podemos remover el efecto de bias causado por la modalidad de captura de la im\'agen. Finalmente se convierte la im\'agen a double para tener mayor precisi\'on en las pr\'oximas etapas.
 	\begin{itemize}
-		\item Filtro de Mediana: para el calculo del filtro de mediana, se busc\'o cual era la mejor ventana a utilizar para cada uno de los dataset nombrados anteriormente, basandonos en el valor obtenido por la funci\'on vlroc de Matlab que determina el \'area bajo la curva promedio para cada set de im\'agenes. Los resultados arrojaron diferentes valores para cada conjunto de im\'agenes, por un lado se obtuvo un valor de ventana igual a 113 para el dataset HRF, lo cual es razonable para el tama\'no de dichas im\'agenes. Con este valor de ventana se obtuvo un \'area promedio de 0.xxxx.... Por otro lado, con el conjunto de DRIVE se determin\'o que el mejor valor de ventana es 29, dando un valor de \'area bajo la curva de 0.xxxx..,  lo cual tambi\'en es razonable ya que este tipo de im\'agenes son de menor tama\~no que las anteriores. Finalmente las im\'agenes ARIA resultaron un valor de ventana igual a 41 con un valor de \'area bajo la curva de 0.xxxx. IMAGENES DE LA CURVA DE ROC.
-		\item Filtro Gaussiano: para el calculo de \'area bajo la curva de este filtro, se utilizaron los par\'ametros por defecto del filtro, observ\'andose que los valores obtenidos fueron muy por debajo de los obtenidos en los otros filtros. Por tal raz\'on se determin\'o que no es un filtro aplicable a este tipo de im\'agenes ya que no genera resultados buenos. IMAGENES DE LA CURVA DE ROC
-		\item Filtro Promedio: para el calculo del filtro promedio, se busc\'o cual era la mejor ventana a utilizar para cada uno de los dataset nombrados anteriormente, basandonos en el valor obtenido por la funci\'on vlroc de Matlab que determina el \'area bajo la curva promedio para cada set de im\'agenes. Los resultados arrojaron diferentes valores para cada conjunto de im\'agenes, por un lado se obtuvo un valor de ventana igual a 85 para el dataset HRF, lo cual es razonable para el tama\'no de dichas im\'agenes. Con este valor de ventana se obtuvo un \'area promedio de 0.xxxx.... Por otro lado, con el conjunto de DRIVE se determin\'o que el mejor valor de ventana es 25, dando un valor de \'area bajo la curva de 0.xxxx..,  lo cual tambi\'en es razonable ya que este tipo de im\'agenes es de menor tama\~no que las anteriores. Finalmente las im\'agenes ARIA resultaron un valor de ventana igual a XX con un valor de \'area bajo la curva de 0.xxxx. IMAGENES DE LA CURVA DE ROC.
-	\end{itemize}
-\item Extracci\'on de ruido:
+		\item Filtro de Mediana: para el calculo del filtro de mediana, se busc\'o cual era la mejor ventana a utilizar para cada uno de los dataset nombrados anteriormente, basandonos en el valor obtenido por la funci\'on vlroc de Matlab que determina el \'area bajo la curva promedio para cada set de im\'agenes. Los resultados arrojaron diferentes valores para cada conjunto de im\'agenes, por un lado se obtuvo un valor de ventana igual a 113 para el dataset HRF, lo cual es razonable para el tama\'no de dichas im\'agenes. Con este valor de ventana se obtuvo un \'area promedio de 0.93549792847311808; Por otro lado, con el conjunto de DRIVE se determin\'o que el mejor valor de ventana es 29, dando un valor de \'area bajo la curva de 0.89402376839923237,  lo cual tambi\'en es razonable ya que este tipo de im\'agenes son de menor tama\~no que las anteriores. Finalmente las im\'agenes ARIA resultaron un valor de ventana igual a 41 con un valor de \'area bajo la curva de 0.87129918114207383.
+		
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{area_mediana_hrf} \label{fig:mediana_hrf}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{area_mediana_drive} \label{fig:mediana_drive}}
+		\subfloat{\includegraphics[width=1\textwidth]{area_mediana_aria} \label{fig:mediana_aria}}
+    \caption{\'Areas promedio para cada tam\~no de ventana. De izquierda a derecha: HRF; DRIVE; ARIA}
+		\label{fig:transferOverfeat}
+\end{figure}
+		\item Filtro Gaussiano: para el calculo de \'area bajo la curva de este filtro, se utilizaron los par\'ametros por defecto del filtro, observ\'andose que los valores obtenidos, fueron muy por debajo de los obtenidos en los otros filtros, citando como  ejemplo que el mejor valor de \'area obtenido fue de 0.6581, dando finalmente un \'area promedio de  0,570545455. Por tal raz\'on se determin\'o que no es un filtro aplicable a este tipo de im\'agenes ya que no genera resultados buenos. 
+
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=1\textwidth]{area_gaussiano_aria} \label{fig:gaussiano_aria}}
+    \caption{\'Area para cada im\'agen del dataset ARIA}
+		\label{fig:transferOverfeat}
+\end{figure}		
+		
+		\item Filtro Promedio: para el calculo del filtro promedio, se busc\'o cual era la mejor ventana a utilizar para cada uno de los dataset nombrados anteriormente, basandonos en el valor obtenido por la funci\'on vlroc de Matlab que determina el \'area bajo la curva promedio para cada set de im\'agenes. Los resultados arrojaron diferentes valores para cada conjunto de im\'agenes, por un lado se obtuvo un valor de ventana igual a 85 para el dataset HRF, lo cual es razonable para el tama\'no de dichas im\'agenes. Con este valor de ventana se obtuvo un \'area promedio de 0.91206707786006846. Por otro lado, con el conjunto de DRIVE se determin\'o que el mejor valor de ventana es 25, dando un valor de \'area bajo la curva de 0.86215776453164372,  lo cual tambi\'en es razonable ya que este tipo de im\'agenes es de menor tama\~no que las anteriores. Finalmente las im\'agenes ARIA resultaron un valor de ventana igual a 39 con un valor de \'area bajo la curva de 0.78861591936804754. 
+		
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{area_media_hrf} \label{fig:mediana_hrf}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{area_media_drive} \label{fig:mediana_drive}}
+		\subfloat{\includegraphics[width=1\textwidth]{area_media_aria} \label{fig:mediana_aria}}
+    \caption{\'Areas promedio para cada tam\~no de ventana. De izquierda a derecha: HRF; DRIVE; ARIA}
+		\label{fig:transferOverfeat}
+\end{figure}
+\end{itemize}
+\item Extracci\'on de ruido: el objetivo de esta etapa consiste en disminuir el ruido de las im\'agenes que se genera en la captura de fondo de ojo, el cual puede ser generado por el dispositivo de captura utilizado. 
 	\begin{itemize}
-		\item Filtro anisotr\'opico:
+		\item Filtro anisotr\'opico: en este filtro se busc\'o el valor de la mejor iteraci\'on para cada set de im\'agenes. Los resultados obtenidos para cada set de im\'agenes fueron los siguientes. En el dataset HRF se obtuvo que la mejor iteraci\'on tiene un valor de 16, dando por resultado un \área de 0.93545909045136177. El dataset DRIVE tiene un valor de iteraci\'on para este filtro de 4 y un area de 0.8608094146529679 cuando se aplica con valor de media encontrado anteriormente y un valor de 5 cuando se aplica con el valor de mediana, dando un \'area de 0.90323495204661008. En el dataset ARIA el valor de la mejor iteraci\'on es 8 con un valor de area de 0.88453280013285718.
+
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{itera_anisotropica_hrf} \label{fig:anisotropica_hrf}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{itera_anisotropica_drive} \label{fig:mediana_drive}}
+		\subfloat{\includegraphics[width=1\textwidth]{itera_anisotropica_aria} \label{fig:mediana_aria}}
+    \caption{\'Areas promedio para el filtro anisotr\'opico. De izquierda a derecha: HRF; DRIVE; ARIA}
+		\label{fig:transferOverfeat}
+\end{figure}   
 		\item Filtro de coherencia: 
 	\end{itemize}
 \end{itemize}
