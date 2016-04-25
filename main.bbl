@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.3 $
+% $ biblatex version 2.5 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,52 +16,50 @@
   {}
 \endgroup
 
-\entry{akita1982computer}{article}{}
-  \name{author}{2}{}{%
+\entry{kanagasingam2014progress}{article}{}
+  \name{author}{6}{}{%
     {{}%
-     {Akita}{A.}%
-     {Koichiro}{K.}%
+     {Kanagasingam}{K.}%
+     {Yogesan}{Y.}%
      {}{}%
      {}{}}%
     {{}%
-     {Kuga}{K.}%
-     {Hideki}{H.}%
+     {Bhuiyan}{B.}%
+     {Alauddin}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Abramoff}{A.}%
+     {Michael~D}{M.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smith}{S.}%
+     {R~Theodore}{R.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldschmidt}{G.}%
+     {Leonard}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wong}{W.}%
+     {Tien~Y}{T.~Y.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
     {Elsevier}%
   }
-  \strng{namehash}{AKKH1}
-  \strng{fullhash}{AKKH1}
-  \field{labelalpha}{AK82}
-  \field{sortinit}{A}
-  \field{number}{6}
-  \field{pages}{431\bibrangedash 443}
-  \field{title}{A computer method of understanding ocular fundus images}
-  \field{volume}{15}
-  \field{journaltitle}{Pattern recognition}
-  \field{year}{1982}
-\endentry
-
-\entry{coto2003metodos}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Coto}{C.}%
-     {Ernesto}{E.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CE1}
-  \strng{fullhash}{CE1}
-  \field{labelalpha}{Cot03}
-  \field{sortinit}{C}
-  \field{pages}{9\bibrangedash 15}
-  \field{title}{M{\'e}todos de segmentaci{\'o}n de im{\'a}genes m{\'e}dicas}
-  \field{volume}{1}
-  \field{journaltitle}{Universidad Central de Venezuela: Lecturas en Ciencias
-  de la Computaci{\'o}n}
-  \field{year}{2003}
+  \strng{namehash}{KYBAAMDSRTGLWTY1}
+  \strng{fullhash}{KYBAAMDSRTGLWTY1}
+  \field{pages}{20\bibrangedash 42}
+  \field{title}{Progress on retinal image analysis for age related macular
+  degeneration}
+  \field{volume}{38}
+  \field{journaltitle}{Progress in retinal and eye research}
+  \field{year}{2014}
 \endentry
 
 \entry{cunha2004blood}{article}{}
@@ -77,8 +75,6 @@
   }
   \strng{namehash}{CVJG1}
   \strng{fullhash}{CVJG1}
-  \field{labelalpha}{CV04}
-  \field{sortinit}{C}
   \field{number}{3}
   \field{pages}{715\bibrangedash 721}
   \field{title}{The blood--retinal barriers system. Basic concepts and clinical
@@ -86,6 +82,51 @@
   \field{volume}{78}
   \field{journaltitle}{Experimental eye research}
   \field{year}{2004}
+\endentry
+
+\entry{li2004automated}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Li}{L.}%
+     {Huiqi}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chutatape}{C.}%
+     {Opas}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{LHCO1}
+  \strng{fullhash}{LHCO1}
+  \field{number}{2}
+  \field{pages}{246\bibrangedash 254}
+  \field{title}{Automated feature extraction in color retinal images by a model
+  based approach}
+  \field{volume}{51}
+  \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
+  \field{year}{2004}
+\endentry
+
+\entry{coto2003metodos}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Coto}{C.}%
+     {Ernesto}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CE1}
+  \strng{fullhash}{CE1}
+  \field{pages}{9\bibrangedash 15}
+  \field{title}{M{\'e}todos de segmentaci{\'o}n de im{\'a}genes m{\'e}dicas}
+  \field{volume}{1}
+  \field{journaltitle}{Universidad Central de Venezuela: Lecturas en Ciencias
+  de la Computaci{\'o}n}
+  \field{year}{2003}
 \endentry
 
 \entry{fraz2012blood}{article}{}
@@ -129,10 +170,8 @@
   \list{publisher}{1}{%
     {Elsevier}%
   }
-  \strng{namehash}{FMM+1}
+  \strng{namehash}{FMMRPHAUBRAROCGBSA1}
   \strng{fullhash}{FMMRPHAUBRAROCGBSA1}
-  \field{labelalpha}{Fra+12}
-  \field{sortinit}{F}
   \field{number}{1}
   \field{pages}{407\bibrangedash 433}
   \field{title}{Blood vessel segmentation methodologies in retinal images--a
@@ -140,6 +179,32 @@
   \field{volume}{108}
   \field{journaltitle}{Computer methods and programs in biomedicine}
   \field{year}{2012}
+\endentry
+
+\entry{akita1982computer}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Akita}{A.}%
+     {Koichiro}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kuga}{K.}%
+     {Hideki}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{AKKH1}
+  \strng{fullhash}{AKKH1}
+  \field{number}{6}
+  \field{pages}{431\bibrangedash 443}
+  \field{title}{A computer method of understanding ocular fundus images}
+  \field{volume}{15}
+  \field{journaltitle}{Pattern recognition}
+  \field{year}{1982}
 \endentry
 
 \entry{hoover2000locating}{article}{}
@@ -165,8 +230,6 @@
   }
   \strng{namehash}{HAKVGM1}
   \strng{fullhash}{HAKVGM1}
-  \field{labelalpha}{HKG00}
-  \field{sortinit}{H}
   \field{number}{3}
   \field{pages}{203\bibrangedash 210}
   \field{title}{Locating blood vessels in retinal images by piecewise threshold
@@ -174,141 +237,6 @@
   \field{volume}{19}
   \field{journaltitle}{Medical Imaging, IEEE Transactions on}
   \field{year}{2000}
-\endentry
-
-\entry{kanagasingam2014progress}{article}{}
-  \name{author}{6}{}{%
-    {{}%
-     {Kanagasingam}{K.}%
-     {Yogesan}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bhuiyan}{B.}%
-     {Alauddin}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Abramoff}{A.}%
-     {Michael~D}{M.~D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Smith}{S.}%
-     {R~Theodore}{R.~T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Goldschmidt}{G.}%
-     {Leonard}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wong}{W.}%
-     {Tien~Y}{T.~Y.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Elsevier}%
-  }
-  \strng{namehash}{KY+1}
-  \strng{fullhash}{KYBAAMDSRTGLWTY1}
-  \field{labelalpha}{Kan+14}
-  \field{sortinit}{K}
-  \field{pages}{20\bibrangedash 42}
-  \field{title}{Progress on retinal image analysis for age related macular
-  degeneration}
-  \field{volume}{38}
-  \field{journaltitle}{Progress in retinal and eye research}
-  \field{year}{2014}
-\endentry
-
-\entry{li2004automated}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Li}{L.}%
-     {Huiqi}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chutatape}{C.}%
-     {Opas}{O.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{LHCO1}
-  \strng{fullhash}{LHCO1}
-  \field{labelalpha}{LC04}
-  \field{sortinit}{L}
-  \field{number}{2}
-  \field{pages}{246\bibrangedash 254}
-  \field{title}{Automated feature extraction in color retinal images by a model
-  based approach}
-  \field{volume}{51}
-  \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
-  \field{year}{2004}
-\endentry
-
-\entry{patton2006retinal}{article}{}
-  \name{author}{8}{}{%
-    {{}%
-     {Patton}{P.}%
-     {Niall}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Aslam}{A.}%
-     {Tariq~M}{T.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {MacGillivray}{M.}%
-     {Thomas}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Deary}{D.}%
-     {Ian~J}{I.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dhillon}{D.}%
-     {Baljean}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Eikelboom}{E.}%
-     {Robert~H}{R.~H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yogesan}{Y.}%
-     {Kanagasingam}{K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Constable}{C.}%
-     {Ian~J}{I.~J.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Elsevier}%
-  }
-  \strng{namehash}{PN+1}
-  \strng{fullhash}{PNATMMTDIJDBERHYKCIJ1}
-  \field{labelalpha}{Pat+06}
-  \field{sortinit}{P}
-  \field{number}{1}
-  \field{pages}{99\bibrangedash 127}
-  \field{title}{Retinal image analysis: concepts, applications and potential}
-  \field{volume}{25}
-  \field{journaltitle}{Progress in retinal and eye research}
-  \field{year}{2006}
 \endentry
 
 \entry{perona1990scale}{article}{}
@@ -329,8 +257,6 @@
   }
   \strng{namehash}{PPMJ1}
   \strng{fullhash}{PPMJ1}
-  \field{labelalpha}{PM90}
-  \field{sortinit}{P}
   \field{number}{7}
   \field{pages}{629\bibrangedash 639}
   \field{title}{Scale-space and edge detection using anisotropic diffusion}
@@ -340,47 +266,57 @@
   \field{year}{1990}
 \endentry
 
-\entry{staal2004ridge}{article}{}
-  \name{author}{5}{}{%
+\entry{budai2011public}{article}{}
+  \name{author}{7}{}{%
     {{}%
-     {Staal}{S.}%
-     {Joes}{J.}%
+     {Budai}{B.}%
+     {Attila}{A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Abr{\`a}moff}{A.}%
-     {Michael~D}{M.~D.}%
+     {Odstrcilik}{O.}%
+     {Jan}{J.}%
      {}{}%
      {}{}}%
     {{}%
-     {Niemeijer}{N.}%
-     {Meindert}{M.}%
+     {Kolar}{K.}%
+     {Radim}{R.}%
      {}{}%
      {}{}}%
     {{}%
-     {Viergever}{V.}%
-     {Max~A}{M.~A.}%
+     {Hornegger}{H.}%
+     {Joachim}{J.}%
      {}{}%
      {}{}}%
     {{}%
-     {Van~Ginneken}{V.~G.}%
-     {Bram}{B.}%
+     {Jan}{J.}%
+     {Jiri}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kubena}{K.}%
+     {Tomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Michelson}{M.}%
+     {Georg}{G.}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {IEEE}%
+  \list{publisher}{2}{%
+    {The Association for Research in Vision}%
+    {Ophthalmology}%
   }
-  \strng{namehash}{SJ+1}
-  \strng{fullhash}{SJAMDNMVMAVGB1}
-  \field{labelalpha}{Sta+04}
-  \field{sortinit}{S}
-  \field{number}{4}
-  \field{pages}{501\bibrangedash 509}
-  \field{title}{Ridge-based vessel segmentation in color images of the retina}
-  \field{volume}{23}
-  \field{journaltitle}{Medical Imaging, IEEE Transactions on}
-  \field{year}{2004}
+  \strng{namehash}{BAOJKRHJJJKTMG1}
+  \strng{fullhash}{BAOJKRHJJJKTMG1}
+  \field{number}{14}
+  \field{pages}{1345\bibrangedash 1345}
+  \field{title}{A public database for the evaluation of fundus image
+  segmentation algorithms}
+  \field{volume}{52}
+  \field{journaltitle}{Investigative Ophthalmology \& Visual Science}
+  \field{year}{2011}
 \endentry
 
 \lossort
