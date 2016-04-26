@@ -142,7 +142,19 @@ ARIA es una base de datos creada en 2006, en una colaboración de investigación
     \caption{\'Areas promedio para el filtro anisotr\'opico. De izquierda a derecha: HRF; DRIVE; ARIA}
 		\label{fig:transferOverfeat}
 \end{figure}   
-		\item Filtro de coherencia: 
+		\item Filtro de coherencia: para este filtro se realiz\'o una b\'usqueda para determinar cu\'al es la iteraci\'on que da el mejor valor de \'area bajo la curva. Para esto se realizaron iteraciones desde 1 hasta 130 en cada conjunto de im\'agenes. Los resultados obtenidos fueron analizados en funci\'on del tiempo computacional que tarda el algoritmo en procesar el conjunto de im\'agenes y el valor de \'area bajo la curva. El n\'umero de iteraciones en el dataset DRIVE que oobtuvo mejor resultado fue la iteraci\'on 75, donde la par\'abola llega al punto m\'aximo dando un \'area de 0.91120933863902276. En el caso del dataset HRF y ARIA, los resultados obtenidos por el filtro de coherencia fueron determinados en base al trade-off planteado antes. En ambos casos, el algoritmo no gener\'o una par\'abola como en el caso de DRIVE, sino que el valor del \'area creci\'o en todo momento. Finalmente se decidi\'o en base que el mejor valor de iteraci\'on quedar\'ia en 50 ya que el tiempo computacional que tarda el algoritmo en iterar hasta 130 en relaci\'on al resultado obtenido no es satisfactorio ya que la variaci\'on en el resultado se ve reci\'en en el tercer d\'igito decimal. El \'area bajo la curva en el dataset HRF con 50 iteraciones es 0.943776025051246 y un tiempo aproximado de 5 horas, mientras que para 130 iteraciones obtenemos un valor de \'area bajo  la curva de 0.94819116836674155 a un tiempo aproximado de 24 horas. Debido a que la relacion tiempo-ganancia es muy grande, se determin\'o que la mejor iteraci\'on en este conjunto de im\'agenes es 50.
+
+\begin{figure}[H]
+\centering
+\graphicspath {Figures} 
+	  \label{fig:color}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{itera_anisotropica_hrf} \label{fig:anisotropica_hrf}}
+		\subfloat{\includegraphics[width=0.5\textwidth]{itera_anisotropica_drive} \label{fig:mediana_drive}}
+		\subfloat{\includegraphics[width=1\textwidth]{itera_anisotropica_aria} \label{fig:mediana_aria}}
+    \caption{NO SON LAS IMAGENES QUE VAN. De izquierda a derecha: HRF; DRIVE; ARIA}
+		\label{fig:transferOverfeat}
+\end{figure}  
+		
 	\end{itemize}
 \end{itemize}
 
