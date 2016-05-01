@@ -77,6 +77,23 @@ ARIA es una base de datos creada en 2006, en una colaboración de investigación
 %-----------------------------------
 \section{M\'etricas de calidad utilizadas}
 
+En la Teor\'ia de detecci\'on de señales una curva ROC (Receiver Operating Characteristic, o Caracter\'istica Operativa del Receptor) es una representaci\'on gr\'afica de la sensibilidad frente al resultado de realizar 1 menos la especificidad, para un sistema clasificador binario seg\'un se var\'ia el umbral de discriminaci\'on. Otra interpretaci\'on de este gr\'afico es la representaci\'on de la raz\'on de verdaderos positivos frente a la raz\'on de falsos positivos tambi\'en seg\'un se var\'ia el umbral de discriminaci\'on (valor a partir del cual decidimos que un caso es un positivo).
+Si aplicamos estos t\'erminos a este trabajo, la raz\'on de verdaderos positivos, se presenta cuando se pretende detectar y segmentar los vasos sangu\'ineos de la retina. El valor de la raz\'on de verdaderos positivos estar\'a dada por la raz\'on con la que nuestro algoritmo de detecci\'on define si un pixel de la imagen es o no es parte de una vaso sangu\'ineo de manera correcta. Del mismo modo un falso positivo, es la raz\'on cuando  se decide que un pixel no forma parte de un vaso sangu\'ineo, y esta determinaci\'on es correcta. Del mismo modo podemos definir lo que es un falso negativo y un verdadero negativo, cuyo significado es contrario a lo anterior. Es decir, un falso negativo es cuando se decide que un pixel no es parte de un vaso sangu\'ineo cuando en realidad si lo es, y un verdadero negativo es cuando se decide que un pixel es parte de un vaso sangu\'ineo, y no es as\'i en realidad. 
+El an\'alisis de la curva ROC proporciona herramientas para seleccionar los modelos posiblemente \'optimos y descartar modelos sub\'optimos independientemente del coste de la distribuci\'on de las dos clases sobre las que se decide. La curva ROC se desarroll\'o por ingenieros el\'ectricos para medir la eficacia en la detecci\'on de objetos enemigos en campos de batalla mediante pantallas de radar, a partir de lo cual se desarrolla la Teor\'ia de Detecci\'on de Señales (TDS). El an\'alisis ROC se aplic\'o posteriormente en medicina, radiolog\'ia, psicolog\'ia y otras \'areas durante varias d\'ecadas. S\'olo recientemente ha encontrado aplicaci\'on en \'areas como aprendizaje autom\'atico (o machine learning en ingl\'es), y miner\'ia de datos (data mining en ingl\'es).
+La tabla de contingencia puede proporcionar varias medidas de evaluaci\'on. Para dibujar una curva ROC s\'olo son necesarias las razones de Verdaderos Positivos (VPR) y de falsos positivos (FPR). La VPR mide hasta qu\'e punto un clasificador o prueba diagn\'ostica es capaz de detectar o clasificar los casos positivos correctamente, de entre todos los casos positivos disponibles durante la prueba. La FPR define cu\'antos resultados positivos son incorrectos de entre todos los casos negativos disponibles durante la prueba.
+Una curva ROC se define por FPR y VPR como ejes x e y respectivamente, y representa los intercambios entre verdaderos positivos y falsos positivo. Dado que VPR es equivalente a sensibilidad y FPR es igual a 1-especificidad, el gr\'afico ROC tambi\'en es conocido como la representaci\'on de sensibilidad frente a (1-especificidad). Cada resultado de predicci\'on o instancia de la matriz de confusi\'on representa un punto en el espacio ROC.
+El mejor m\'etodo posible de predicci\'on se situar\'ia en un punto en la esquina superior izquierda, o coordenada (0,1) del espacio ROC, representando un 100\% de sensibilidad (ning\'un falso negativo) y un 100\% tambi\'en de especificidad (ning\'un falso positivo). A este punto (0,1) tambi\'en se le llama una clasificaci\'on perfecta. Por el contrario, una clasificaci\'on totalmente aleatoria (o adivinaci\'on aleatoria) dar\'ia un punto a lo largo de la l\'inea diagonal, que se llama tambi\'en l\'inea de no-discriminaci\'on, desde el extremo inferior izquierdo hasta la esquina superior derecha (independientemente de los tipos de bases positivas y negativas). El par\'ametro para evaluar la correctitud de la prueba, es el \'area bajo la curva que tomar\'a valores entre los valores m\'aximos y m\'inimos mencionados, es decir: 1  para un prueba perfecta y 0,5 si la prueba fue in\'util 
+\cite{wiki:curvaROC}.
+
+\begin{figure}[H]
+	{
+	\centering
+	\includegraphics[width=0.75\textwidth]{Figures/CurvaROC}
+	\caption[Curva ROC]{Composici\'on de la curva ROC}
+	\label{fig:Composici\'on de la curva ROC}
+	}
+\end{figure}
+
 
 %-----------------------------------
 %	SECTION 3

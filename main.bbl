@@ -62,6 +62,62 @@
   \field{year}{2014}
 \endentry
 
+\entry{patton2006retinal}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Patton}{P.}%
+     {Niall}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aslam}{A.}%
+     {Tariq~M}{T.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {MacGillivray}{M.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Deary}{D.}%
+     {Ian~J}{I.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dhillon}{D.}%
+     {Baljean}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eikelboom}{E.}%
+     {Robert~H}{R.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yogesan}{Y.}%
+     {Kanagasingam}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Constable}{C.}%
+     {Ian~J}{I.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{PNATMMTDIJDBERHYKCIJ1}
+  \strng{fullhash}{PNATMMTDIJDBERHYKCIJ1}
+  \field{number}{1}
+  \field{pages}{99\bibrangedash 127}
+  \field{title}{Retinal image analysis: concepts, applications and potential}
+  \field{volume}{25}
+  \field{journaltitle}{Progress in retinal and eye research}
+  \field{year}{2006}
+\endentry
+
 \entry{cunha2004blood}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -108,6 +164,587 @@
   based approach}
   \field{volume}{51}
   \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
+  \field{year}{2004}
+\endentry
+
+\entry{walter2002contribution}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Walter}{W.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {Jean-Claude}{J.-C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Massin}{M.}%
+     {Pascale}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Erginay}{E.}%
+     {Ali}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{WTKJCMPEA1}
+  \strng{fullhash}{WTKJCMPEA1}
+  \field{number}{10}
+  \field{pages}{1236\bibrangedash 1243}
+  \field{title}{A contribution of image processing to the diagnosis of diabetic
+  retinopathy-detection of exudates in color fundus images of the human retina}
+  \field{volume}{21}
+  \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+  \field{year}{2002}
+\endentry
+
+\entry{spencer1996image}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Spencer}{S.}%
+     {Timothy}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Olson}{O.}%
+     {John~A}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McHardy}{M.}%
+     {Kenneth~C}{K.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sharp}{S.}%
+     {Peter~F}{P.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Forrester}{F.}%
+     {John~V}{J.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{STOJAMKCSPFFJV1}
+  \strng{fullhash}{STOJAMKCSPFFJV1}
+  \field{number}{4}
+  \field{pages}{284\bibrangedash 302}
+  \field{title}{An image-processing strategy for the segmentation and
+  quantification of microaneurysms in fluorescein angiograms of the ocular
+  fundus}
+  \field{volume}{29}
+  \field{journaltitle}{Computers and biomedical research}
+  \field{year}{1996}
+\endentry
+
+\entry{frame1998comparison}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Frame}{F.}%
+     {Allan~J}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Undrill}{U.}%
+     {Peter~E}{P.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cree}{C.}%
+     {Michael~J}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Olson}{O.}%
+     {John~A}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McHardy}{M.}%
+     {Kenneth~C}{K.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sharp}{S.}%
+     {Peter~F}{P.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Forrester}{F.}%
+     {John~V}{J.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{FAJUPECMJOJAMKCSPFFJV1}
+  \strng{fullhash}{FAJUPECMJOJAMKCSPFFJV1}
+  \field{number}{3}
+  \field{pages}{225\bibrangedash 238}
+  \field{title}{A comparison of computer based classification methods applied
+  to the detection of microaneurysms in ophthalmic fluorescein angiograms}
+  \field{volume}{28}
+  \field{journaltitle}{Computers in biology and medicine}
+  \field{year}{1998}
+\endentry
+
+\entry{niemeijer2007automated}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Niemeijer}{N.}%
+     {Meindert}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ginneken}{G.}%
+     {Bram}{B.}%
+     {van}{v.}%
+     {}{}}%
+    {{}%
+     {Russell}{R.}%
+     {Stephen~R}{S.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Suttorp-Schulten}{S.-S.}%
+     {Maria~SA}{M.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Abramoff}{A.}%
+     {Michael~D}{M.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {The Association for Research in Vision}%
+    {Ophthalmology}%
+  }
+  \strng{namehash}{NMGBvRSRSSMSAMD1}
+  \strng{fullhash}{NMGBvRSRSSMSAMD1}
+  \field{number}{5}
+  \field{pages}{2260\bibrangedash 2267}
+  \field{title}{Automated detection and differentiation of drusen, exudates,
+  and cotton-wool spots in digital color fundus photographs for diabetic
+  retinopathy diagnosis}
+  \field{volume}{48}
+  \field{journaltitle}{Investigative ophthalmology \& visual science}
+  \field{year}{2007}
+\endentry
+
+\entry{rapantzikos2003detection}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Rapantzikos}{R.}%
+     {Konstantinos}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zervakis}{Z.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Balas}{B.}%
+     {K}{K}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{RKZMBK1}
+  \strng{fullhash}{RKZMBK1}
+  \field{number}{1}
+  \field{pages}{95\bibrangedash 108}
+  \field{title}{Detection and segmentation of drusen deposits on human retina:
+  Potential in the diagnosis of age-related macular degeneration}
+  \field{volume}{7}
+  \field{journaltitle}{Medical image analysis}
+  \field{year}{2003}
+\endentry
+
+\entry{agurto2011automatic}{article}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Agurto}{A.}%
+     {Carla}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barriga}{B.}%
+     {E~Simon}{E.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Murray}{M.}%
+     {Victor}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nemeth}{N.}%
+     {Sheila}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crammer}{C.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bauman}{B.}%
+     {Wendall}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zamora}{Z.}%
+     {Gilberto}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pattichis}{P.}%
+     {Marios~S}{M.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Soliz}{S.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {The Association for Research in Vision}%
+    {Ophthalmology}%
+  }
+  \strng{namehash}{ACBESMVNSCRBWZGPMSSP1}
+  \strng{fullhash}{ACBESMVNSCRBWZGPMSSP1}
+  \field{number}{8}
+  \field{pages}{5862\bibrangedash 5871}
+  \field{title}{Automatic detection of diabetic retinopathy and age-related
+  macular degeneration in digital fundus images}
+  \field{volume}{52}
+  \field{journaltitle}{Investigative ophthalmology \& visual science}
+  \field{year}{2011}
+\endentry
+
+\entry{kose2010statistical}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {K{\"o}se}{K.}%
+     {Cemal}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{\c{S}}evik}{{\c{S}}.}%
+     {U{\u{g}}ur}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gen{\c{c}}alio{\u{g}}lu}{G.}%
+     {Okyay}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{\.I}kiba{\c{s}}}{{\.I}.}%
+     {Cevat}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kay{\i}k{\i}{\c{c}}{\i}o{\u{g}}lu}{K.}%
+     {Temel}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{KCSUGOICKT1}
+  \strng{fullhash}{KCSUGOICKT1}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 13}
+  \field{title}{A statistical segmentation method for measuring age-related
+  macular degeneration in retinal fundus images}
+  \field{volume}{34}
+  \field{journaltitle}{Journal of medical systems}
+  \field{year}{2010}
+\endentry
+
+\entry{kose2008automatic}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {K{\"o}se}{K.}%
+     {Cemal}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{\c{S}}evik}{{\c{S}}.}%
+     {U{\u{g}}ur}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gen{\c{c}}alio{\u{g}}lu}{G.}%
+     {Okyay}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{KCSUGO1}
+  \strng{fullhash}{KCSUGO1}
+  \field{number}{5}
+  \field{pages}{611\bibrangedash 619}
+  \field{title}{Automatic segmentation of age-related macular degeneration in
+  retinal fundus images}
+  \field{volume}{38}
+  \field{journaltitle}{Computers in Biology and Medicine}
+  \field{year}{2008}
+\endentry
+
+\entry{yin2012automated}{inproceedings}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Yin}{Y.}%
+     {Fengshou}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Jiang}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wong}{W.}%
+     {Damon Wing~Kee}{D.~W.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tan}{T.}%
+     {Ngan~Meng}{N.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cheung}{C.}%
+     {Carol}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baskaran}{B.}%
+     {Mani}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aung}{A.}%
+     {Tin}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wong}{W.}%
+     {Tien~Yin}{T.~Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{YFLJWDWKTNMCCBMATWTY1}
+  \strng{fullhash}{YFLJWDWKTNMCCBMATWTY1}
+  \field{booktitle}{Computer-based medical systems (CBMS), 2012 25th
+  international symposium on}
+  \field{pages}{1\bibrangedash 6}
+  \field{title}{Automated segmentation of optic disc and optic cup in fundus
+  images for glaucoma diagnosis}
+  \field{year}{2012}
+\endentry
+
+\entry{mookiah2012data}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Mookiah}{M.}%
+     {Muthu Rama~Krishnan}{M.~R.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Acharya}{A.}%
+     {U~Rajendra}{U.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lim}{L.}%
+     {Choo~Min}{C.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Petznick}{P.}%
+     {Andrea}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Suri}{S.}%
+     {Jasjit~S}{J.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{MMRKAURLCMPASJS1}
+  \strng{fullhash}{MMRKAURLCMPASJS1}
+  \field{pages}{73\bibrangedash 82}
+  \field{title}{Data mining technique for automated diagnosis of glaucoma using
+  higher order spectra and wavelet energy features}
+  \field{volume}{33}
+  \field{journaltitle}{Knowledge-Based Systems}
+  \field{year}{2012}
+\endentry
+
+\entry{bock2010glaucoma}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Bock}{B.}%
+     {R{\"u}diger}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Meier}{M.}%
+     {J{\"o}rg}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ny{\'u}l}{N.}%
+     {L{\'a}szl{\'o}~G}{L.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hornegger}{H.}%
+     {Joachim}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Michelson}{M.}%
+     {Georg}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{BRMJNLGHJMG1}
+  \strng{fullhash}{BRMJNLGHJMG1}
+  \field{number}{3}
+  \field{pages}{471\bibrangedash 481}
+  \field{title}{Glaucoma risk index: automated glaucoma detection from color
+  fundus images}
+  \field{volume}{14}
+  \field{journaltitle}{Medical image analysis}
+  \field{year}{2010}
+\endentry
+
+\entry{xu2011sliding}{incollection}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Xu}{X.}%
+     {Yanwu}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xu}{X.}%
+     {Dong}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lin}{L.}%
+     {Stephen}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Jiang}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cheng}{C.}%
+     {Jun}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cheung}{C.}%
+     {Carol~Y}{C.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aung}{A.}%
+     {Tin}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wong}{W.}%
+     {Tien~Yin}{T.~Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{XYXDLSLJCJCCYATWTY1}
+  \strng{fullhash}{XYXDLSLJCJCCYATWTY1}
+  \field{booktitle}{Medical Image Computing and Computer-Assisted
+  Intervention--MICCAI 2011}
+  \field{pages}{1\bibrangedash 8}
+  \field{title}{Sliding window and regression based cup detection in digital
+  fundus images for glaucoma diagnosis}
+  \field{year}{2011}
+\endentry
+
+\entry{staal2004ridge}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Staal}{S.}%
+     {Joes}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Abr{\`a}moff}{A.}%
+     {Michael~D}{M.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Niemeijer}{N.}%
+     {Meindert}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Viergever}{V.}%
+     {Max~A}{M.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Van~Ginneken}{V.~G.}%
+     {Bram}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{SJAMDNMVMAVGB1}
+  \strng{fullhash}{SJAMDNMVMAVGB1}
+  \field{number}{4}
+  \field{pages}{501\bibrangedash 509}
+  \field{title}{Ridge-based vessel segmentation in color images of the retina}
+  \field{volume}{23}
+  \field{journaltitle}{Medical Imaging, IEEE Transactions on}
   \field{year}{2004}
 \endentry
 
