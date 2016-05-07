@@ -707,6 +707,454 @@
   \field{year}{2011}
 \endentry
 
+\entry{wong2004prospective}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Wong}{W.}%
+     {Tien~Yin}{T.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shankar}{S.}%
+     {Anoop}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {Ronald}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {Barbara~EK}{B.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hubbard}{H.}%
+     {Larry~D}{L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BMJ Publishing Group Ltd}%
+  }
+  \strng{namehash}{WTYSAKRKBEHLD1}
+  \strng{fullhash}{WTYSAKRKBEHLD1}
+  \field{number}{7457}
+  \field{pages}{79}
+  \field{title}{Prospective cohort study of retinal vessel diameters and risk
+  of hypertension}
+  \field{volume}{329}
+  \field{journaltitle}{bmj}
+  \field{year}{2004}
+\endentry
+
+\entry{hubbard1999methods}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Hubbard}{H.}%
+     {Larry~D}{L.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brothers}{B.}%
+     {Rosemary~J}{R.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {King}{K.}%
+     {William~N}{W.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clegg}{C.}%
+     {Limin~X}{L.~X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {Ronald}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cooper}{C.}%
+     {Lawton~S}{L.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sharrett}{S.}%
+     {A~Richey}{A.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Davis}{D.}%
+     {Matthew~D}{M.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cai}{C.}%
+     {Jianwen}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Communities Study~Group}{C.~S.~G.}%
+     {Atherosclerosis~Risk}{A.~R.}%
+     {in}{i.}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{HLDBRJKWNCLXKRCLSSARDMDCJCSGARi+1}
+  \strng{fullhash}{HLDBRJKWNCLXKRCLSSARDMDCJCSGARi+1}
+  \field{number}{12}
+  \field{pages}{2269\bibrangedash 2280}
+  \field{title}{Methods for evaluation of retinal microvascular abnormalities
+  associated with hypertension/sclerosis in the Atherosclerosis Risk in
+  Communities Study}
+  \field{volume}{106}
+  \field{journaltitle}{Ophthalmology}
+  \field{year}{1999}
+\endentry
+
+\entry{niemeijer2010automatic}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Niemeijer}{N.}%
+     {Meindert}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ginneken}{G.}%
+     {Bram}{B.}%
+     {van}{v.}%
+     {}{}}%
+    {{}%
+     {Abr{\`a}moff}{A.}%
+     {Michael~D}{M.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{2}{%
+    {International Society for Optics}%
+    {Photonics}%
+  }
+  \strng{namehash}{NMGBvAMD1}
+  \strng{fullhash}{NMGBvAMD1}
+  \field{booktitle}{SPIE Medical Imaging}
+  \field{pages}{76240I\bibrangedash 76240I}
+  \field{title}{Automatic determination of the artery vein ratio in retinal
+  images}
+  \field{year}{2010}
+\endentry
+
+\entry{chaudhuri1989detection}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Chaudhuri}{C.}%
+     {Subhasis}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chatterjee}{C.}%
+     {Shankar}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Katz}{K.}%
+     {Norman}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nelson}{N.}%
+     {Mark}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldbaum}{G.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{CSCSKNNMGM1}
+  \strng{fullhash}{CSCSKNNMGM1}
+  \field{number}{3}
+  \field{pages}{263\bibrangedash 269}
+  \field{title}{Detection of blood vessels in retinal images using
+  two-dimensional matched filters}
+  \field{volume}{8}
+  \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+  \field{year}{1989}
+\endentry
+
+\entry{beach1999oximetry}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Beach}{B.}%
+     {JM}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schwenzer}{S.}%
+     {KJ}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Srinivas}{S.}%
+     {S}{S}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kim}{K.}%
+     {D}{D}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tiedeman}{T.}%
+     {JS}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Am Physiological Soc}%
+  }
+  \strng{namehash}{BJSKSSKDTJ1}
+  \strng{fullhash}{BJSKSSKDTJ1}
+  \field{number}{2}
+  \field{pages}{748\bibrangedash 758}
+  \field{title}{Oximetry of retinal vessels by dual-wavelength imaging:
+  calibration and influence of pigmentation}
+  \field{volume}{86}
+  \field{journaltitle}{Journal of Applied Physiology}
+  \field{year}{1999}
+\endentry
+
+\entry{hart1999measurement}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Hart}{H.}%
+     {William~E}{W.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldbaum}{G.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {C{\^o}t{\'e}}{C.}%
+     {Brad}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kube}{K.}%
+     {Paul}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nelson}{N.}%
+     {Mark~R}{M.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{HWEGMCBKPNMR1}
+  \strng{fullhash}{HWEGMCBKPNMR1}
+  \field{number}{2}
+  \field{pages}{239\bibrangedash 252}
+  \field{title}{Measurement and classification of retinal vascular tortuosity}
+  \field{volume}{53}
+  \field{journaltitle}{International journal of medical informatics}
+  \field{year}{1999}
+\endentry
+
+\entry{heneghan2002characterization}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Heneghan}{H.}%
+     {Conor}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Flynn}{F.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O’Keefe}{O.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cahill}{C.}%
+     {Mark}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{HCFJOMCM1}
+  \strng{fullhash}{HCFJOMCM1}
+  \field{number}{4}
+  \field{pages}{407\bibrangedash 429}
+  \field{title}{Characterization of changes in blood vessel width and
+  tortuosity in retinopathy of prematurity using image analysis}
+  \field{volume}{6}
+  \field{journaltitle}{Medical image analysis}
+  \field{year}{2002}
+\endentry
+
+\entry{capowski1995numeric}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Capowski}{C.}%
+     {Joseph~J}{J.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kylstra}{K.}%
+     {Jan~A}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Freedman}{F.}%
+     {Sharon~F}{S.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {LWW}%
+  }
+  \strng{namehash}{CJJKJAFSF1}
+  \strng{fullhash}{CJJKJAFSF1}
+  \field{number}{6}
+  \field{pages}{490\bibrangedash 500}
+  \field{title}{A numeric index based on spatial frequency for the tortuosity
+  of retinal vessels and its application to plus disease in retinopathy of
+  prematurity.}
+  \field{volume}{15}
+  \field{journaltitle}{Retina}
+  \field{year}{1995}
+\endentry
+
+\entry{chutatape1998retinal}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chutatape}{C.}%
+     {O}{O}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zheng}{Z.}%
+     {Liu}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Krishnan}{K.}%
+     {SM}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{COZLKS1}
+  \strng{fullhash}{COZLKS1}
+  \field{booktitle}{Engineering in Medicine and Biology Society, 1998.
+  Proceedings of the 20th Annual International Conference of the IEEE}
+  \field{pages}{3144\bibrangedash 3149}
+  \field{title}{Retinal blood vessel detection and tracking by matched Gaussian
+  and Kalman filters}
+  \field{volume}{6}
+  \field{year}{1998}
+\endentry
+
+\entry{sinthanayothin1999automated}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Sinthanayothin}{S.}%
+     {Chanjira}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boyce}{B.}%
+     {James~F}{J.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cook}{C.}%
+     {Helen~L}{H.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Williamson}{W.}%
+     {Thomas~H}{T.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {BMJ Publishing Group Ltd.}%
+  }
+  \strng{namehash}{SCBJFCHLWTH1}
+  \strng{fullhash}{SCBJFCHLWTH1}
+  \field{number}{8}
+  \field{pages}{902\bibrangedash 910}
+  \field{title}{Automated localisation of the optic disc, fovea, and retinal
+  blood vessels from digital colour fundus images}
+  \field{volume}{83}
+  \field{journaltitle}{British Journal of Ophthalmology}
+  \field{year}{1999}
+\endentry
+
+\entry{martinez2007segmentation}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Martinez-Perez}{M.-P.}%
+     {M~Elena}{M.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hughes}{H.}%
+     {Alun~D}{A.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thom}{T.}%
+     {Simon~A}{S.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bharath}{B.}%
+     {Anil~A}{A.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Parker}{P.}%
+     {Kim~H}{K.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{MPMEHADTSABAAPKH1}
+  \strng{fullhash}{MPMEHADTSABAAPKH1}
+  \field{number}{1}
+  \field{pages}{47\bibrangedash 61}
+  \field{title}{Segmentation of blood vessels from red-free and fluorescein
+  retinal images}
+  \field{volume}{11}
+  \field{journaltitle}{Medical image analysis}
+  \field{year}{2007}
+\endentry
+
 \entry{staal2004ridge}{article}{}
   \name{author}{5}{}{%
     {{}%
@@ -746,6 +1194,272 @@
   \field{volume}{23}
   \field{journaltitle}{Medical Imaging, IEEE Transactions on}
   \field{year}{2004}
+\endentry
+
+\entry{jimenez2012automated}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Jim{\'e}nez}{J.}%
+     {S}{S}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Alemany}{A.}%
+     {P}{P}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {N{\'u}{\~n}ez}{N.}%
+     {FJ}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fond{\'o}n}{F.}%
+     {I}{I}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Serrano}{S.}%
+     {C}{C}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Acha}{A.}%
+     {B}{B}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Failde}{F.}%
+     {I}{I}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{JSAPNFFISCABFI1}
+  \strng{fullhash}{JSAPNFFISCABFI1}
+  \field{number}{9}
+  \field{pages}{284\bibrangedash 289}
+  \field{title}{Automated detection of microaneurysms by using region growing
+  and fuzzy artmap neural network}
+  \field{volume}{87}
+  \field{journaltitle}{Archivos de la Sociedad Espa{\~n}ola de
+  Oftalmolog{\'\i}a (English Edition)}
+  \field{year}{2012}
+\endentry
+
+\entry{velez2014metodologia}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {V{\'e}lez~Mart{\'\i}nez}{V.~M.}%
+     {Oscar~Andr{\'e}s}{O.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Universidad Tecnol{\'o}gica de Pereira}%
+  }
+  \strng{namehash}{VMOA1}
+  \strng{fullhash}{VMOA1}
+  \field{title}{Metodolog{\'\i}a para el registro multimodal de im{\'a}genes 3D
+  utilizando informaci{\'o}n mutua}
+  \field{year}{2014}
+\endentry
+
+\entry{zitova2003image}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Zitova}{Z.}%
+     {Barbara}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Flusser}{F.}%
+     {Jan}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{ZBFJ1}
+  \strng{fullhash}{ZBFJ1}
+  \field{number}{11}
+  \field{pages}{977\bibrangedash 1000}
+  \field{title}{Image registration methods: a survey}
+  \field{volume}{21}
+  \field{journaltitle}{Image and vision computing}
+  \field{year}{2003}
+\endentry
+
+\entry{pluim2003image}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Pluim}{P.}%
+     {Josien~PW}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fitzpatrick}{F.}%
+     {J~Michael}{J.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PJPFJM1}
+  \strng{fullhash}{PJPFJM1}
+  \field{number}{11}
+  \field{pages}{1341\bibrangedash 1343}
+  \field{title}{Image registration}
+  \field{volume}{22}
+  \field{journaltitle}{Medical Imaging, IEEE Transactions on}
+  \field{year}{2003}
+\endentry
+
+\entry{hill2001medical}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hill}{H.}%
+     {Derek~LG}{D.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Batchelor}{B.}%
+     {Philipp~G}{P.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Holden}{H.}%
+     {Mark}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hawkes}{H.}%
+     {David~J}{D.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IOP Publishing}%
+  }
+  \strng{namehash}{HDLBPGHMHDJ1}
+  \strng{fullhash}{HDLBPGHMHDJ1}
+  \field{number}{3}
+  \field{pages}{R1}
+  \field{title}{Medical image registration}
+  \field{volume}{46}
+  \field{journaltitle}{Physics in medicine and biology}
+  \field{year}{2001}
+\endentry
+
+\entry{rueckert2010nonrigid}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Rueckert}{R.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aljabar}{A.}%
+     {Paul}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{RDAP1}
+  \strng{fullhash}{RDAP1}
+  \field{number}{4}
+  \field{pages}{113\bibrangedash 119}
+  \field{title}{Nonrigid registration of medical images: Theory, methods, and
+  applications [applications corner]}
+  \field{volume}{27}
+  \field{journaltitle}{Signal Processing Magazine, IEEE}
+  \field{year}{2010}
+\endentry
+
+\entry{hill2002retina}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hill}{H.}%
+     {Robert~“Buzz”}{R.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HRB1}
+  \strng{fullhash}{HRB1}
+  \field{pages}{123\bibrangedash 141}
+  \field{title}{Retina identification}
+  \field{journaltitle}{Biometrics}
+  \field{year}{2002}
+\endentry
+
+\entry{reillo2000iris}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Re{\'\i}llo}{R.}%
+     {R~S{\'a}nchez}{R.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RRS1}
+  \strng{fullhash}{RRS1}
+  \field{number}{41}
+  \field{title}{El Iris Ocular como par{\'a}metro para la identificaci{\'o}n
+  Biom{\'e}trica}
+  \field{journaltitle}{Revista SIC, Seguridad, Inform{\'a}tica y
+  Comunicaciones}
+  \field{year}{2000}
+\endentry
+
+\entry{alonso2012analisis}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Alonso~Fuertes}{A.~F.}%
+     {Patricia de los~{\'A}ngeles}{P.~d. l.~{\'A}.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AFPdlA1}
+  \strng{fullhash}{AFPdlA1}
+  \field{title}{An{\'a}lisis del algoritmo DTW para reconocimiento
+  biom{\'e}trico de personas mediante firma manuscrita on-line}
+  \field{year}{2012}
+\endentry
+
+\entry{kose2011personal}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {K{\"o}se}{K.}%
+     {Cemal}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{\.I}ki}{{\.I}.}%
+     {Cevat}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{KCIC+1}
+  \strng{fullhash}{KCIC+1}
+  \field{number}{11}
+  \field{pages}{13670\bibrangedash 13681}
+  \field{title}{A personal identification system using retinal vasculature in
+  retinal fundus images}
+  \field{volume}{38}
+  \field{journaltitle}{Expert Systems with Applications}
+  \field{year}{2011}
 \endentry
 
 \entry{coto2003metodos}{article}{}
@@ -954,6 +1668,24 @@
   \field{volume}{52}
   \field{journaltitle}{Investigative Ophthalmology \& Visual Science}
   \field{year}{2011}
+\endentry
+
+\entry{wiki:curvaROC}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{note}{[Internet; descargado 1-mayo-2016]}
+  \field{title}{Curva ROC --- Wikipedia{,} La enciclopedia libre}
+  \verb{url}
+  \verb https://es.wikipedia.org/w/index.php?title=Curva_ROC&oldid=89498400
+  \endverb
+  \field{year}{2016}
 \endentry
 
 \lossort
