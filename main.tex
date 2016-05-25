@@ -53,6 +53,10 @@ singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespac
 %\usepackage{subfigure}
 \usepackage{url}
 
+\usepackage{enumerate}
+\LetLtxMacro\itemold\item
+\renewcommand{\item}{\itemindent1cm\itemold}
+
 %----------------------------------------------------------------------------------------
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------

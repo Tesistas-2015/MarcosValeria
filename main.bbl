@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.5 $
+% $ biblatex version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -368,6 +368,49 @@
   \field{year}{2003}
 \endentry
 
+\entry{cummings2002organisation}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Cummings}{C.}%
+     {E}{E}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Facey}{F.}%
+     {K}{K}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Macpherson}{M.}%
+     {K}{K}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Morris}{M.}%
+     {A}{A}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reay}{R.}%
+     {L}{L}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Slattery}{S.}%
+     {J}{J}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CE+1}
+  \strng{fullhash}{CEFKMKMARLSJ1}
+  \field{labelalpha}{Cum+02}
+  \field{sortinit}{C}
+  \field{title}{Organisation of Services for Diabetic Retinopathy Screening}
+  \field{volume}{1}
+  \field{journaltitle}{Health Technology Assessement Report}
+  \field{year}{2002}
+\endentry
+
 \entry{cunha2004blood}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -390,6 +433,25 @@
   \field{volume}{78}
   \field{journaltitle}{Experimental eye research}
   \field{year}{2004}
+\endentry
+
+\entry{cunha2012imaging}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Cunha-Vaz}{C.-V.}%
+     {Jos{\'e}}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Karger Publishers}%
+  }
+  \strng{namehash}{CVJ1}
+  \strng{fullhash}{CVJ1}
+  \field{labelalpha}{CV12}
+  \field{sortinit}{C}
+  \field{title}{Imaging the Retina}
+  \field{year}{2012}
 \endentry
 
 \entry{chutatape1998retinal}{inproceedings}{}
@@ -424,6 +486,51 @@
   and Kalman filters}
   \field{volume}{6}
   \field{year}{1998}
+\endentry
+
+\entry{fransen2002clinical}{article}{}
+  \true{moreauthor}
+  \name{author}{5}{}{%
+    {{}%
+     {Fransen}{F.}%
+     {Stephen~R}{S.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leonard-Martin}{L.-M.}%
+     {Thomas~C}{T.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Feuer}{F.}%
+     {William~J}{W.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hildebrand}{H.}%
+     {P~Lloyd}{P.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Group}{G.}%
+     {Inoveon Health~Research}{I.~H.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{FSR+1}
+  \strng{fullhash}{FSRLMTCFWJHPLGIHR+1}
+  \field{labelalpha}{Fra+02}
+  \field{sortinit}{F}
+  \field{number}{3}
+  \field{pages}{595\bibrangedash 601}
+  \field{title}{Clinical evaluation of patients with diabetic retinopathy:
+  accuracy of the Inoveon diabetic retinopathy-3DT system}
+  \field{volume}{109}
+  \field{journaltitle}{Ophthalmology}
+  \field{year}{2002}
 \endentry
 
 \entry{fraz2012blood}{article}{}
@@ -532,6 +639,61 @@
   \field{volume}{28}
   \field{journaltitle}{Computers in biology and medicine}
   \field{year}{1998}
+\endentry
+
+\entry{hansen2004screening}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Hansen}{H.}%
+     {Anja~B}{A.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sander}{S.}%
+     {Birgit}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Larsen}{L.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kleener}{K.}%
+     {J{\o}rgen}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Borch-Johnsen}{B.-J.}%
+     {Knut}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {Ronald}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lund-Andersen}{L.-A.}%
+     {Henrik}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{HAB+1}
+  \strng{fullhash}{HABSBLMKJBJKKRLAH1}
+  \field{labelalpha}{Han+04}
+  \field{sortinit}{H}
+  \field{number}{6}
+  \field{pages}{656\bibrangedash 665}
+  \field{title}{Screening for diabetic retinopathy using a digital
+  non-mydriatic camera compared with standard 35-mm stereo colour
+  transparencies}
+  \field{volume}{82}
+  \field{journaltitle}{Acta Ophthalmologica Scandinavica}
+  \field{year}{2004}
 \endentry
 
 \entry{hart1999measurement}{article}{}
@@ -658,15 +820,15 @@
   \name{author}{1}{}{%
     {{}%
      {Hill}{H.}%
-     {Robert~‚ÄúBuzz‚Äù}{R.~B.}%
+     {Robert~‚ÄúBuzz‚Äù}{R.~‚.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
     {Springer}%
   }
-  \strng{namehash}{HRB1}
-  \strng{fullhash}{HRB1}
+  \strng{namehash}{HR‚1}
+  \strng{fullhash}{HR‚1}
   \field{labelalpha}{Hil02}
   \field{sortinit}{H}
   \field{pages}{123\bibrangedash 141}
@@ -883,6 +1045,50 @@
   \field{year}{2014}
 \endentry
 
+\entry{klein2004comparability}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Klein}{K.}%
+     {Barbara~EK}{B.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {Ronald}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hall}{H.}%
+     {Ellen~R}{E.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lee}{L.}%
+     {Kristine~E}{K.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jensen}{J.}%
+     {Karl}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{KBE+1}
+  \strng{fullhash}{KBEKRHERLKEJK1}
+  \field{labelalpha}{Kle+04}
+  \field{sortinit}{K}
+  \field{number}{4}
+  \field{pages}{668\bibrangedash 670}
+  \field{title}{The comparability of estimates of retroilluminated lens
+  opacities as judged from film-based and digital imaging}
+  \field{volume}{138}
+  \field{journaltitle}{American journal of ophthalmology}
+  \field{year}{2004}
+\endentry
+
 \entry{kose2010statistical}{article}{}
   \name{author}{5}{}{%
     {{}%
@@ -1018,6 +1224,102 @@
   \field{volume}{51}
   \field{journaltitle}{Biomedical Engineering, IEEE Transactions on}
   \field{year}{2004}
+\endentry
+
+\entry{van2003grading}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Leeuwen}{L.}%
+     {Redmer}{R.}%
+     {van}{v.}%
+     {}{}}%
+    {{}%
+     {Chakravarthy}{C.}%
+     {Usha}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vingerling}{V.}%
+     {Johannes~R}{J.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brussee}{B.}%
+     {Corina}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hooghart}{H.}%
+     {Ada~J}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mulder}{M.}%
+     {Paul~G}{P.~G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jong}{J.}%
+     {Paulus~TVM}{P.~T.}%
+     {de}{d.}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{LRv+1}
+  \strng{fullhash}{LRvCUVJRBCHAJMPGJPTd1}
+  \field{labelalpha}{Lee+03}
+  \field{sortinit}{L}
+  \field{number}{8}
+  \field{pages}{1540\bibrangedash 1544}
+  \field{title}{Grading of age-related maculopathy for epidemiological studies:
+  is digital imaging as good as 35-mm film?}
+  \field{volume}{110}
+  \field{journaltitle}{Ophthalmology}
+  \field{year}{2003}
+\endentry
+
+\entry{nih:retinoblastoma}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {MedlinePlus}{M.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{M1}
+  \strng{fullhash}{M1}
+  \field{labelalpha}{Med16}
+  \field{extraalpha}{1}
+  \field{sortinit}{M}
+  \field{note}{[Internet; accedido 25-mayo-2016]}
+  \field{title}{C√°ncer de ojo}
+  \verb{url}
+  \verb https://www.nlm.nih.gov/medlineplus/spanish/eyecancer.html
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{nih:enfermedadesRetina}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {MedlinePlus}{M.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{M1}
+  \strng{fullhash}{M1}
+  \field{labelalpha}{Med16}
+  \field{extraalpha}{2}
+  \field{sortinit}{M}
+  \field{note}{[Internet; accedido 25-mayo-2016]}
+  \field{title}{Enfermedades de la retina}
+  \verb{url}
+  \verb https://www.nlm.nih.gov/medlineplus/spanish/retinaldisorders.html
+  \endverb
+  \field{year}{2016}
 \endentry
 
 \entry{mookiah2012data}{article}{}
@@ -1382,6 +1684,66 @@
   \field{volume}{7}
   \field{journaltitle}{Medical image analysis}
   \field{year}{2003}
+\endentry
+
+\entry{oms:cifras}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Salud}{S.}%
+     {Organizacion~Mundial}{O.~M.}%
+     {de~la}{d.~l.}%
+     {}{}}%
+  }
+  \strng{namehash}{SOMdl1}
+  \strng{fullhash}{SOMdl1}
+  \field{labelalpha}{Sal14}
+  \field{sortinit}{S}
+  \field{note}{[Internet; accedido 25-mayo-2016]}
+  \field{title}{Ceguera y discapacidad visual}
+  \verb{url}
+  \verb http://who.int/mediacentre/factsheets/fs282/es/
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{oms:cifraCegueraPorRetinopatia}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Salud}{S.}%
+     {Organizacion~Mundial}{O.~M.}%
+     {de~la}{d.~l.}%
+     {}{}}%
+  }
+  \strng{namehash}{SOMdl1}
+  \strng{fullhash}{SOMdl1}
+  \field{labelalpha}{Sal15}
+  \field{sortinit}{S}
+  \field{note}{[Internet; accedido 25-mayo-2016]}
+  \field{title}{Diabetes}
+  \verb{url}
+  \verb http://who.int/mediacentre/factsheets/fs312/es/
+  \endverb
+  \field{year}{2015}
+\endentry
+
+\entry{oms:discapcidadVisual}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Salud}{S.}%
+     {Organizacion~Mundial}{O.~M.}%
+     {de~la}{d.~l.}%
+     {}{}}%
+  }
+  \strng{namehash}{SOMdl1}
+  \strng{fullhash}{SOMdl1}
+  \field{labelalpha}{Sal16}
+  \field{sortinit}{S}
+  \field{note}{[Internet; accedido 25-mayo-2016]}
+  \field{title}{10 datos acerca de la ceguera y la discapacidad visual}
+  \verb{url}
+  \verb http://www.who.int/features/factfiles/blindness/blindness_facts/es/
+  \endverb
+  \field{year}{2016}
 \endentry
 
 \entry{sinthanayothin1999automated}{article}{}
