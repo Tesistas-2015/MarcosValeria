@@ -9,23 +9,27 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Retinopat\'ia diab\'etica}}{9}{figure.caption.12}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Glaucoma}}{11}{figure.caption.13}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Fotografia de fondo de ojo}}{13}{figure.caption.16}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces (A) (B) (C)\relax }}{14}{figure.caption.17}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Glaucoma}}{15}{figure.caption.18}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces HMT}}{15}{figure.caption.19}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exudados}}{15}{figure.caption.20}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Glaucoma}}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Fotografia de fondo de ojo}}{14}{figure.caption.17}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces (A) (B) (C)\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Ofaltmosocpio Manual}}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Glaucoma}}{16}{figure.caption.20}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces HMT}}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Exudados}}{17}{figure.caption.22}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Glaucoma}}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Etapas preprocesamiento}}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces \relax }}{18}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Imagenes de Fondo de ojo}}{27}{figure.caption.29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Drive}}{28}{figure.caption.30}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Imagenes de Fondo de ojo}}{29}{figure.caption.33}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Drive}}{30}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Drive}}{34}{figure.caption.35}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Im\'agenes del dataset HRF. De izquierda a derecha: Retinopat\'ia diabetica; Glaucoma; Imagen Sana\relax }}{35}{figure.37}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Im\'agenes del dataset ARIA. De izquierda a derecha: a; c; d\relax }}{35}{figure.39}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva ROC}}{37}{figure.caption.41}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \'Areas promedio para cada tam\~no de ventana. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{38}{figure.45}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \'Area para cada im\'agen del dataset ARIA\relax }}{39}{figure.47}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces \'Areas promedio para cada tam\~no de ventana. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{40}{figure.49}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces \'Areas promedio para el filtro anisotr\'opico. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{41}{figure.51}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces NO SON LAS IMAGENES QUE VAN. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{42}{figure.53}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Drive}}{36}{figure.caption.39}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Im\'agenes del dataset HRF. De izquierda a derecha: Retinopat\'ia diabetica; Glaucoma; Imagen Sana\relax }}{37}{figure.41}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Im\'agenes del dataset ARIA. De izquierda a derecha: a; c; d\relax }}{37}{figure.43}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Curva ROC}}{39}{figure.caption.45}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \'Areas promedio para cada tam\~no de ventana. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{40}{figure.49}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \'Area para cada im\'agen del dataset ARIA\relax }}{41}{figure.51}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \'Areas promedio para cada tam\~no de ventana. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{42}{figure.53}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \'Areas promedio para el filtro anisotr\'opico. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{43}{figure.55}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces NO SON LAS IMAGENES QUE VAN. De izquierda a derecha: HRF; DRIVE; ARIA\relax }}{44}{figure.57}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
